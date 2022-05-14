@@ -220,7 +220,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '../config';
+# $settings['config_sync_directory'] = '/directory/outside/webroot';
 
 /**
  * Settings:
@@ -249,7 +249,7 @@ $settings['config_sync_directory'] = '../config';
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'sUkBSuQXT6ghDF8CKHWyc0rNke6lIAxM-9HU2VKa5dK2zeZ8ZUs1PJvgfUZzY4aXaAz9g7I9Sg';
+$settings['hash_salt'] = 'd8j2lkbZTVjTr6MOFeggBPGQ7sAI34DNdK1k1TC3azLho2Ljd9yDTt43p4zlpY3j9enGyIUqUA';
 
 /**
  * Deployment identifier.
@@ -766,6 +766,21 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
+# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }
+$databases['default']['default'] = array (
+  'database' => 'u607826484_mibienestar',
+  'username' => 'u607826484_mibienestar',
+  'password' => 'g2HWm~l>',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_CC2n_3iaXqWtJWhoe4o73HEa4IQuWPV8sYu4hY8ckKUdAzpKxbKANv90N5as9r3VeMvloqS59Q/sync';
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
