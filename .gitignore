@@ -9,7 +9,6 @@
 #ignore custom
 /sites/default/files/*
 /sites/default/setting.php
-/sites/default/setting.local.php
 *.sql
 
 # Ignore paths that may contain user-generated content
