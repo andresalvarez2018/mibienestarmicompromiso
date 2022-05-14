@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'de49dab9b8234d2f32ac899c01594111ba1199d0',
+        'reference' => 'cf846cf91565b094ae1c57d8e5e4124e79a81e0a',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -793,7 +793,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'de49dab9b8234d2f32ac899c01594111ba1199d0',
+            'reference' => 'cf846cf91565b094ae1c57d8e5e4124e79a81e0a',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1129,8 +1129,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher-implementation' => array(
