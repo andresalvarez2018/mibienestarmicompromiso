@@ -779,7 +779,7 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_CC2n_3iaXqWtJWhoe4o73HEa4IQuWPV8sYu4hY8ckKUdAzpKxbKANv90N5as9r3VeMvloqS59Q/sync';
+$settings['config_sync_directory'] = '../config';
 
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
