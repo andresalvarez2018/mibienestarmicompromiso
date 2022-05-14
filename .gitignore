@@ -7,7 +7,7 @@
 /sites/*/*services*.yml
 
 #ignore custom
-/sites/default/*
+/sites/default/files/*
 *.sql
 
 # Ignore paths that may contain user-generated content
