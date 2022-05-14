@@ -35,7 +35,7 @@
 /.eslintignore
 /.eslintrc.json
 /.gitattributes
-/.htaccess
+# /.htaccess
 /autoload.php
 /composer.json
 /composer.lock

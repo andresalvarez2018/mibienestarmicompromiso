@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?mibienestarmicompromiso.com$
+RewriteCond %{REQUEST_URI} !^/web/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /web/$1
+RewriteCond %{HTTP_HOST} ^(www.)?mibienestarmicompromiso.com$
+RewriteRule ^(/)?$ web/ [L]
