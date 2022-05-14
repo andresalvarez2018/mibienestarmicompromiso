@@ -1,2 +1,4 @@
-RewriteEngine on
-Redirect https://mibienestarmicompromiso.com/ https://mibienestarmicompromiso.com/web/
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^mibienestarmicompromiso.com
+RewriteRule (.*) mibienestarmicompromiso.com/$1 [R=301,L]
+RewriteRule ^$ /web/ [L]
