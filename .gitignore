@@ -8,7 +8,7 @@ web/sites/*/*services*.yml
 
 #ignore custom
 web/sites/default/files/*
-web/sites/default/setting.php
+/sites/default/setting.php
 *.sql
 
 # Ignore paths that may contain user-generated content
