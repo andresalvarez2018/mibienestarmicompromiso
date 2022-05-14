@@ -1,2 +1,2 @@
 RewriteEngine on
-Redirect / /web/
+Redirect https://mibienestarmicompromiso.com/ https://mibienestarmicompromiso.com/web/
