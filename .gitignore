@@ -3,7 +3,7 @@
 # earlier versions of Drupal are tracked in `community/PHP/`
 
 # Ignore configuration files that may contain sensitive information
-/sites/*/*settings*.php
+web/sites/*/*settings*.php
 /sites/*/*services*.yml
 
 #ignore custom
@@ -31,10 +31,10 @@
 /modules/README.txt
 /profiles/README.txt
 /sites/README.txt
-/sites/example.sites.php
-/sites/example.settings.local.php
-/sites/development.services.yml
-/sites/default/settings.local.php
+web/sites/example.sites.php
+web/sites/example.settings.local.php
+web/sites/development.services.yml
+web/sites/default/settings.local.php
 /themes/README.txt
 /.csslintrc
 /.editorconfig
