@@ -1,0 +1,27 @@
+uuid: c0305b92-38b8-429f-9a13-26d1c53ab671
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - showcase_lite
+_core:
+  default_config_hash: juhi0hOtSzX1YQ9NQp0kTTUYRKUBrxropPgseJ9XPbI
+id: useraccountmenu
+theme: showcase_lite
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

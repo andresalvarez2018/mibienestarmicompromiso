@@ -2061,6 +2061,78 @@
             "install-path": "../../web/modules/contrib/gin_toolbar"
         },
         {
+            "name": "drupal/showcase_lite",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/showcase_lite.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/showcase_lite-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "f82ee6733f0bd768a8766d66252ce17ec4833c5e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1607417922",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stavros Kounis (skounis)",
+                    "homepage": "https://www.drupal.org/u/skounis",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Soukri Kechagia (skechagia)",
+                    "homepage": "https://www.drupal.org/u/skech",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Vasilis Kechagias (vkech)",
+                    "homepage": "https://www.drupal.org/u/vkech",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Giorgos Konispoliatis (Geokon)",
+                    "homepage": "https://www.drupal.org/u/geokon",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "skounis",
+                    "homepage": "https://www.drupal.org/user/877552"
+                },
+                {
+                    "name": "vkech",
+                    "homepage": "https://www.drupal.org/user/1451830"
+                }
+            ],
+            "description": "A free version of Showcase+, our Drupal theme for creatives, trendsetters, design and development studios.",
+            "homepage": "https://www.drupal.org/project/showcase_lite",
+            "support": {
+                "source": "https://git.drupalcode.org/project/showcase_lite",
+                "issues": "https://www.drupal.org/project/issues/showcase_lite"
+            },
+            "install-path": "../../web/themes/contrib/showcase_lite"
+        },
+        {
             "name": "drush/drush",
             "version": "11.0.9",
             "version_normalized": "11.0.9.0",

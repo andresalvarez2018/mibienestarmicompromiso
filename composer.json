@@ -25,6 +25,7 @@
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.2",
         "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/showcase_lite": "^1.3",
         "drush/drush": "^11.0"
     },
     "conflict": {

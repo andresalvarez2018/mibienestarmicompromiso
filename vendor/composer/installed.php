@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'cf846cf91565b094ae1c57d8e5e4124e79a81e0a',
+        'reference' => '04a6b4b0cf742f6a5002141b33af67700f2fa8c9',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -793,7 +793,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'cf846cf91565b094ae1c57d8e5e4124e79a81e0a',
+            'reference' => '04a6b4b0cf742f6a5002141b33af67700f2fa8c9',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -837,6 +837,15 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/showcase_lite' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/showcase_lite',
+            'aliases' => array(),
+            'reference' => '8.x-1.3',
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
