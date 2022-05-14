@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '19bbbda16ad262c28a2cb006e4f5dfbc86560562',
+        'reference' => '17059caa0c9547e3304d11614569e8c2f7aff156',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -478,6 +478,24 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/gin_login' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/gin_login',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
+        'drupal/gin_toolbar' => array(
+            'pretty_version' => '1.0.0-beta22',
+            'version' => '1.0.0.0-beta22',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/gin_toolbar',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-beta22',
+            'dev_requirement' => false,
+        ),
         'drupal/hal' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -658,7 +676,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '19bbbda16ad262c28a2cb006e4f5dfbc86560562',
+            'reference' => '17059caa0c9547e3304d11614569e8c2f7aff156',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
