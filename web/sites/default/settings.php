@@ -764,9 +764,9 @@ $settings['migrate_node_migrate_type_classic'] = false;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-    include $app_root . '/' . $site_path . '/settings.local.php';
-}
+// if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+//     include $app_root . '/' . $site_path . '/settings.local.php';
+// }
 $databases['default']['default'] = array(
     'database' => 'u607826484_mibienestar',
     'username' => 'u607826484_mibienestar',
@@ -778,4 +778,3 @@ $databases['default']['default'] = array(
     'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = '../config';
-$settings['trusted_host_patterns'] = [ '.*' ];
