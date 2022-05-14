@@ -767,6 +767,7 @@ $settings['migrate_node_migrate_type_classic'] = false;
 $settings['trusted_host_patterns'] = [
     '^www\.mibienestarmicompromiso\.com$',
     '^mibienestarmicompromiso\.com$',
+    '^.+\.mibienestarmicompromiso\.com$',
 ];
 
 $databases['default']['default'] = array(
