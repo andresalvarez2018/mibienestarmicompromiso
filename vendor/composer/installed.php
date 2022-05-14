@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8c4afd80b5622314ba5e1b7f12a81a5c58d87e7f',
+        'reference' => '5615ac296d65d82a0b241f29152e70be85ed3d15',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -132,6 +132,15 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/bootstrap_barrio' => array(
+            'pretty_version' => '5.5.4',
+            'version' => '5.5.4.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap_barrio',
+            'aliases' => array(),
+            'reference' => '5.5.4',
+            'dev_requirement' => false,
         ),
         'drupal/breakpoint' => array(
             'dev_requirement' => false,
@@ -649,7 +658,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8c4afd80b5622314ba5e1b7f12a81a5c58d87e7f',
+            'reference' => '5615ac296d65d82a0b241f29152e70be85ed3d15',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1312,6 +1321,15 @@
             'reference' => '2c309e258adeb9970229042be39b360d34986fad',
             'dev_requirement' => false,
         ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => 'v5.1.3',
+            'version' => '5.1.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'reference' => '1a6fdfae6be09b09eaced8f0e442ca6f7680a61e',
+            'dev_requirement' => false,
+        ),
         'twig/twig' => array(
             'pretty_version' => 'v2.14.11',
             'version' => '2.14.11.0',
@@ -1320,6 +1338,12 @@
             'aliases' => array(),
             'reference' => '66baa66f29ee30e487e05f1679903e36eb01d727',
             'dev_requirement' => false,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v5.1.3',
+            ),
         ),
         'typo3/phar-stream-wrapper' => array(
             'pretty_version' => 'v3.1.7',
