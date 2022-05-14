@@ -35,10 +35,7 @@
 /.eslintignore
 /.eslintrc.json
 /.gitattributes
-# /.htaccess
 /autoload.php
-/composer.json
-/composer.lock
 /example.gitignore
 /index.php
 /LICENSE.txt
