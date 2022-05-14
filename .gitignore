@@ -29,6 +29,7 @@
 /sites/example.sites.php
 /sites/example.settings.local.php
 /sites/development.services.yml
+/sites/default/settings.local.php
 /themes/README.txt
 /.csslintrc
 /.editorconfig
