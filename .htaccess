@@ -1,11 +1,5 @@
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^mibienestarmicompromiso.com
-RewriteRule (.*) https://www.mibienestarmicompromiso.com/web/$1 [R=301,L]
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule .* - [L]
-RewriteCond %{DOCUMENT_ROOT} -f [NC]
-RewriteRule ^(.*)$  [L]
-RewriteCond %{DOCUMENT_ROOT}/web/ -f [NC]
-RewriteRule ^(.*)$ / [L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mibienestarmicompromiso.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.mibienestarmicompromiso.com$
+RewriteCond %{REQUEST_URI} !web/
+RewriteRule (.*) /web/$1 [L]
