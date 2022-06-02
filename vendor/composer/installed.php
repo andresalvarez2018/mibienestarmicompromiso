@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a7c8a3b9272b92c4893f3254e5ea3e80820d3d9d',
+        'reference' => '67bcec6062f94a5801d7f287ba6098cf77ebd1b9',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -168,6 +168,15 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/addtoany' => array(
+            'pretty_version' => '1.16.0',
+            'version' => '1.16.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/addtoany',
+            'aliases' => array(),
+            'reference' => '8.x-1.16',
+            'dev_requirement' => false,
         ),
         'drupal/admin_toolbar' => array(
             'pretty_version' => '3.1.0',
@@ -838,7 +847,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a7c8a3b9272b92c4893f3254e5ea3e80820d3d9d',
+            'reference' => '67bcec6062f94a5801d7f287ba6098cf77ebd1b9',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
@@ -861,6 +870,24 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/robotstxt' => array(
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/robotstxt',
+            'aliases' => array(),
+            'reference' => '8.x-1.4',
+            'dev_requirement' => false,
+        ),
+        'drupal/schema_metatag' => array(
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/schema_metatag',
+            'aliases' => array(),
+            'reference' => '8.x-2.3',
+            'dev_requirement' => false,
         ),
         'drupal/search' => array(
             'dev_requirement' => false,

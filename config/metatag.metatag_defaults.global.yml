@@ -8,4 +8,8 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
+  description: "Mi bienestar mi compromiso es una página creada con el propósito de informar, motivar y brindar herramientas para que los elementos que hacen que la calidad de la vida no se deteriore con el paso del tiempo. \r\nEn ella encontrará orientación sobre la importancia del ejercicio, sus diferentes componentes, sus beneficios pero no sé limitará a estos hechos ya tan ampliamente divulgados sino que tendrá la opción de evaluar sus condiciones físicas con programas que le ayudarán a mejorar las mismas en todos sus componentes, adicionalmente un énfasis especial en nutrición, higiene del sueño, control del estrés, desafíos mentales y reforzamiento de vínculos sociales. Todos los elementos anteriores que ejecutándolos de manera integral apuntaran sin lugar a dudas al permanente florecimiento de nuestras capacidades la cual constituye el principal propósito de la vida"
+  geo_placename: Colombia
+  geo_position: '4.6482837,-74.2478938'
+  keywords: 'Orientación, Compromiso, componentes, Herramientas'
   title: '[current-page:title] | [site:name]'

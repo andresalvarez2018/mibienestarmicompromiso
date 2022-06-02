@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/addtoany": "^1.16",
         "drupal/admin_toolbar": "^3.1",
         "drupal/bootstrap_barrio": "^5.1",
         "drupal/coffee": "^1.2",
@@ -28,6 +29,8 @@
         "drupal/hreflang": "^1.9",
         "drupal/pathauto": "^1.10",
         "drupal/redirect": "^1.7",
+        "drupal/robotstxt": "^1.4",
+        "drupal/schema_metatag": "^2.3",
         "drupal/search404": "^2.0",
         "drupal/seo_checklist": "^5.1",
         "drupal/showcase_lite": "^1.3",
