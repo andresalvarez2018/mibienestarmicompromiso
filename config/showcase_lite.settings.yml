@@ -1,5 +1,6 @@
 _core:
   default_config_hash: Wr6gIFTlKPv78tt0GfjaEf3O-DvlTIrEwztZHauul1Q
+langcode: es
 breadcrumb_separator: fa-angle-right
 scroll_to_top_display: true
 scroll_to_top_icon: fa-angle-up

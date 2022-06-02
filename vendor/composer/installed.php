@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '95a580e5dccf45f946335dbc9aa3bcdbc4a72f33',
+        'reference' => 'a7c8a3b9272b92c4893f3254e5ea3e80820d3d9d',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -246,6 +246,15 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/checklistapi' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/checklistapi',
+            'aliases' => array(),
+            'reference' => '2.0.0',
+            'dev_requirement' => false,
         ),
         'drupal/ckeditor' => array(
             'dev_requirement' => false,
@@ -514,6 +523,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/ctools' => array(
+            'pretty_version' => '3.7.0',
+            'version' => '3.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/ctools',
+            'aliases' => array(),
+            'reference' => '8.x-3.7',
+            'dev_requirement' => false,
+        ),
         'drupal/datetime' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -637,6 +655,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/hreflang' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/hreflang',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
         'drupal/image' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -709,6 +736,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/metatag' => array(
+            'pretty_version' => '1.19.0',
+            'version' => '1.19.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/metatag',
+            'aliases' => array(),
+            'reference' => '8.x-1.19',
+            'dev_requirement' => false,
+        ),
         'drupal/migrate' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -775,6 +811,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/pathauto' => array(
+            'pretty_version' => '1.10.0',
+            'version' => '1.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/pathauto',
+            'aliases' => array(),
+            'reference' => '8.x-1.10',
+            'dev_requirement' => false,
+        ),
         'drupal/quickedit' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -793,7 +838,16 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '95a580e5dccf45f946335dbc9aa3bcdbc4a72f33',
+            'reference' => 'a7c8a3b9272b92c4893f3254e5ea3e80820d3d9d',
+            'dev_requirement' => false,
+        ),
+        'drupal/redirect' => array(
+            'pretty_version' => '1.7.0',
+            'version' => '1.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/redirect',
+            'aliases' => array(),
+            'reference' => '8.x-1.7',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -813,6 +867,24 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/search404' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/search404',
+            'aliases' => array(),
+            'reference' => '2.0.0',
+            'dev_requirement' => false,
+        ),
+        'drupal/seo_checklist' => array(
+            'pretty_version' => '5.1.0',
+            'version' => '5.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/seo_checklist',
+            'aliases' => array(),
+            'reference' => '5.1.0',
+            'dev_requirement' => false,
         ),
         'drupal/serialization' => array(
             'dev_requirement' => false,
@@ -895,6 +967,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/token' => array(
+            'pretty_version' => '1.10.0',
+            'version' => '1.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/token',
+            'aliases' => array(),
+            'reference' => '8.x-1.10',
+            'dev_requirement' => false,
+        ),
         'drupal/toolbar' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -948,6 +1029,24 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/xmlsitemap' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/xmlsitemap',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
+        'drupal/yoast_seo' => array(
+            'pretty_version' => '1.7.0',
+            'version' => '1.7.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/yoast_seo',
+            'aliases' => array(),
+            'reference' => '8.x-1.7',
+            'dev_requirement' => false,
         ),
         'drush/drush' => array(
             'pretty_version' => '11.0.9',

@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
+    - metatag
     - path
     - text
+    - yoast_seo
 _core:
   default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
 id: node.page.default
@@ -30,6 +34,21 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 121
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_yoast_seo:
+    type: yoast_seo_widget
+    weight: 122
+    region: content
+    settings:
+      body: body
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -82,5 +101,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

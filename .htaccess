@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^mibienestarmicompromiso.com$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.mibienestarmicompromiso.com$
-RewriteCond %{REQUEST_URI} !web/ [NC,OR]
-RewriteCond %{REQUEST_URI} !web/.*
-RewriteRule (.*) /web/$1 [L]

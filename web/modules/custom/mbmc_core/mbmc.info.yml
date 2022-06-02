@@ -1,0 +1,5 @@
+name: 'MBMC Core'
+type: module
+description: 'Module to alter core functions and create customized for your purpose'
+package: 'MBMC'
+core_version_requirement: ^8.8 || ^9
