@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'd8j2lkbZTVjTr6MOFeggBPGQ7sAI34DNdK1k1TC3azLho2Ljd9yDTt43p4zlpY3j9enGyIUqUA';
+$settings['hash_salt'] = 'cn8T0CNbxOacoATg_pDmZPU-lGHKEQdwpMjIA19ZEJE7kGPSnDeYrypA984JTAkou_d41a7NOQ';
 
 /**
  * Deployment identifier.
@@ -769,6 +769,7 @@ $settings['trusted_host_patterns'] = [
     '^www\.mibienestarmicompromiso\.com$',
     '^mibienestarmicompromiso\.com$',
     '^.+\.mibienestarmicompromiso\.com$',
+    'mibienestarmicompromiso\.lndo\.site',
 ];
 
 $databases['default']['default'] = array(
