@@ -17,7 +17,7 @@ base_field: cid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -73,7 +73,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -218,7 +218,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -347,7 +347,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -413,7 +413,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -547,7 +547,7 @@ display:
           submit_button: Filter
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Ordenar por'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -730,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -951,7 +951,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -1096,7 +1096,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -1225,7 +1225,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -1291,7 +1291,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -1540,7 +1540,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op

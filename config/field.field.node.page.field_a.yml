@@ -1,0 +1,31 @@
+uuid: 3a29d712-0208-4412-a018-85a13815b454
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a
+    - node.type.page
+    - paragraphs.paragraphs_type.lib_v2_carousel_card
+  module:
+    - entity_reference_revisions
+id: node.page.field_a
+field_name: field_a
+entity_type: node
+bundle: page
+label: 'Texto principal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      lib_v2_carousel_card: lib_v2_carousel_card
+    negate: 0
+    target_bundles_drag_drop:
+      lib_v2_carousel_card:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

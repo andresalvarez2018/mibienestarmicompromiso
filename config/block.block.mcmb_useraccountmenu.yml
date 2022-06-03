@@ -1,0 +1,35 @@
+uuid: e32992f7-1f96-460d-a43a-cc64d6d352a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - node
+    - system
+  theme:
+    - mcmb
+_core:
+  default_config_hash: juhi0hOtSzX1YQ9NQp0kTTUYRKUBrxropPgseJ9XPbI
+id: mcmb_useraccountmenu
+theme: mcmb
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

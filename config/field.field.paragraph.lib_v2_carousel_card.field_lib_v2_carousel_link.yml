@@ -1,0 +1,23 @@
+uuid: 8ce2bb87-100e-4655-8c49-0e7b52600d7e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lib_v2_carousel_link
+    - paragraphs.paragraphs_type.lib_v2_carousel_card
+  module:
+    - link
+id: paragraph.lib_v2_carousel_card.field_lib_v2_carousel_link
+field_name: field_lib_v2_carousel_link
+entity_type: paragraph
+bundle: lib_v2_carousel_card
+label: Boton
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

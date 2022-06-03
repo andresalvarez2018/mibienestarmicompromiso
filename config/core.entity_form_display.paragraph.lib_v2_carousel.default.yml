@@ -1,0 +1,29 @@
+uuid: 1a6e7ed5-c157-4c37-a12d-b65b4df240fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lib_v2_carousel.field_lib_v2_carousel_group_ref
+    - paragraphs.paragraphs_type.lib_v2_carousel
+  module:
+    - paragraphs
+id: paragraph.lib_v2_carousel.default
+targetEntityType: paragraph
+bundle: lib_v2_carousel
+mode: default
+content:
+  field_lib_v2_carousel_group_ref:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: lib_v2_carousel_card
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

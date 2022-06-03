@@ -4,11 +4,11 @@ langcode: es
 uuid: fa32b52a-4524-4cc2-949a-1454ee82b8e1
 name: 'Mi Bienestar Mi Compromiso'
 mail: webmaster@mibienestarmicompromiso.com
-slogan: ''
+slogan: 'Mi Bienestar Mi Compromiso'
 page:
   403: ''
   404: /search404
-  front: /node
+  front: /node/6
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es

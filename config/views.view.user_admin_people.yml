@@ -16,7 +16,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -134,7 +134,7 @@ display:
           entity_type: user
           entity_field: status
           plugin_id: field
-          label: Estado
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -352,7 +352,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -466,10 +466,10 @@ display:
           total_pages: 0
           id: 0
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
-            first: '« Primero'
-            last: 'Último »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -485,7 +485,7 @@ display:
           submit_button: Filter
           reset_button: true
           reset_button_label: Reset
-          exposed_sorts_label: 'Ordenar por'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -600,7 +600,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Estado
+            label: Status
             description: ''
             identifier: status
             optional: true

@@ -1,0 +1,22 @@
+uuid: b3d71696-8c05-4c56-9ff4-299f7e3905d6
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mcmb
+_core:
+  default_config_hash: x_Qls3I0RpJDS5Zi99ycvVu6bDCV74aIvrWRl47HyOs
+id: mcmb_help
+theme: mcmb
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

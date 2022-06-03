@@ -1,0 +1,20 @@
+uuid: cf18dc75-d231-414e-a1a7-4e36ce8c67b8
+langcode: es
+status: true
+dependencies:
+  theme:
+    - mcmb
+_core:
+  default_config_hash: Wj8P9ApeYjgPDu7gvHCcSRVtvjv__I7h99rz0hO1eC8
+id: mcmb_primaryadminactions
+theme: mcmb
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

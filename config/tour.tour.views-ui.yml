@@ -81,7 +81,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: 'Vista previa'
+    label: Preview
     weight: 10
     position: right
     selector: '#preview-submit'

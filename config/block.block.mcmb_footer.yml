@@ -1,0 +1,27 @@
+uuid: 5174d76d-a6cd-457e-9f83-80cb0d31ed83
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - mcmb
+_core:
+  default_config_hash: dZXpN6IEjFbsyyePltUL7M__x7fSU-CbuKn2_YBkoIc
+id: mcmb_footer
+theme: mcmb
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

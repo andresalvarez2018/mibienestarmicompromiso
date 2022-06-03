@@ -21,8 +21,11 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -36,6 +39,10 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  mbmc: 0
+  mbmc_carrousel: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
@@ -64,6 +71,7 @@ module:
   pathauto: 1
   xmlsitemap: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   claro: 0
@@ -71,4 +79,5 @@ theme:
   stable: 0
   classy: 0
   showcase_lite: 0
+  mcmb: 0
 profile: standard

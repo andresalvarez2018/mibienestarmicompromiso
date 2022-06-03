@@ -1,0 +1,19 @@
+uuid: 6ffb5660-5c98-436e-9197-b40a93865ea9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lib_v2_carousel_sec
+    - paragraphs.paragraphs_type.lib_v2_carousel_card
+id: paragraph.lib_v2_carousel_card.field_lib_v2_carousel_sec
+field_name: field_lib_v2_carousel_sec
+entity_type: paragraph
+bundle: lib_v2_carousel_card
+label: 'Texto secundario'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -11,7 +11,7 @@ _core:
 id: showcase_lite_messages
 theme: showcase_lite
 region: system_messages
-weight: -5
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

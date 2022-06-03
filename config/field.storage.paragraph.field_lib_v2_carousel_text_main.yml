@@ -1,0 +1,21 @@
+uuid: f5d33501-12f8-4060-96a2-0620eba08b7f
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_lib_v2_carousel_text_main
+field_name: field_lib_v2_carousel_text_main
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

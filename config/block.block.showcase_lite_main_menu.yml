@@ -13,7 +13,7 @@ _core:
 id: showcase_lite_main_menu
 theme: showcase_lite
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

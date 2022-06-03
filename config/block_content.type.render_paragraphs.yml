@@ -1,0 +1,8 @@
+uuid: 6322c9a2-e17d-4f57-8abe-08ede71c8dfd
+langcode: es
+status: true
+dependencies: {  }
+id: render_paragraphs
+label: 'Render paragraphs'
+revision: 0
+description: ''

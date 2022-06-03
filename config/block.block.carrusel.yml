@@ -1,0 +1,33 @@
+uuid: 010e3bbf-69e5-4073-b783-b74ad332e26c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:render_paragraphs:5b72d345-0799-42d9-844e-068809fbe17e'
+  module:
+    - block_content
+    - node
+  theme:
+    - showcase_lite
+id: carrusel
+theme: showcase_lite
+region: media_background_first
+weight: -6
+provider: null
+plugin: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
+settings:
+  id: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
+  label: 'Carrusel '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

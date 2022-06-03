@@ -1,0 +1,22 @@
+uuid: 90b8aaa4-9340-4e8d-8164-be4ad1f3a84c
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mcmb
+_core:
+  default_config_hash: W6qer5LIm0ehwHZX6sOoVhc6oMbGTHNUHRKnucWtbnU
+id: mcmb_messages
+theme: mcmb
+region: sidebar_first
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

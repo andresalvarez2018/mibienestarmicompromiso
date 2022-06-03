@@ -1,0 +1,22 @@
+uuid: 06f72497-8f19-4452-8494-47028f3e41e7
+langcode: es
+status: true
+dependencies:
+  theme:
+    - mcmb
+_core:
+  default_config_hash: 7WbI8PzhSSJtckmmP9SwtZ0r1SuLnskBF97vToehcnQ
+id: mcmb_tabs
+theme: mcmb
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
