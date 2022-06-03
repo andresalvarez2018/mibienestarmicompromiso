@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
 settings:
   id: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
-  label: 'Carrusel '
+  label: Carrusel.
   label_display: '0'
   provider: block_content
   status: true
