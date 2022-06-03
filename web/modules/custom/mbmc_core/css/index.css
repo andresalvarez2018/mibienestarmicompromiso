@@ -12,6 +12,7 @@ h1, h2, h3, h4, h6 {
     color: var(--primary-color);
 }
 
+
 .lib-comp-button {
     background: var(--button-color);
     padding: 0.8rem 2rem;
