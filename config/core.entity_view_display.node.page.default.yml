@@ -4,13 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_a
     - field.field.node.page.field_meta_tags
     - field.field.node.page.field_yoast_seo
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
-    - entity_reference_revisions
     - layout_builder
     - layout_discovery
     - metatag
@@ -92,23 +90,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
-          d97dcb75-ba65-42f6-bd41-56531e3db2b7:
-            uuid: d97dcb75-ba65-42f6-bd41-56531e3db2b7
-            region: content
-            configuration:
-              id: 'field_block:node:page:field_a'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            weight: 5
-            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -128,15 +109,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 100
-    region: content
-  field_a:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 104
     region: content
   field_meta_tags:
     type: metatag_empty_formatter

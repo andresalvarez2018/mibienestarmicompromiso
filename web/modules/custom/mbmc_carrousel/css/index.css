@@ -30,7 +30,7 @@
     grid-template-columns: repeat(2, 1fr);
     min-height: var(--height-banner);
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .lib-comp-carrousel__content {

@@ -22,6 +22,7 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
+  devel_generate: 0
   devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
@@ -58,6 +59,7 @@ module:
   search404: 0
   seo_checklist: 0
   shortcut: 0
+  statistics: 0
   system: 0
   taxonomy: 0
   text: 0
