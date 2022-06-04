@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '3a03e9637eebc88db20ae2897141951814e1d893',
+        'reference' => '62be053a794ea888ebea0afe2044a7ada7a340a8',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -369,6 +369,24 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/config_filter' => array(
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/config_filter',
+            'aliases' => array(),
+            'reference' => '8.x-2.3',
+            'dev_requirement' => false,
+        ),
+        'drupal/config_ignore' => array(
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/config_ignore',
+            'aliases' => array(),
+            'reference' => '8.x-2.3',
+            'dev_requirement' => false,
         ),
         'drupal/config_translation' => array(
             'dev_requirement' => false,
@@ -937,7 +955,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '3a03e9637eebc88db20ae2897141951814e1d893',
+            'reference' => '62be053a794ea888ebea0afe2044a7ada7a340a8',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
