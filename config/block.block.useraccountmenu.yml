@@ -1,10 +1,11 @@
 uuid: c0305b92-38b8-429f-9a13-26d1c53ab671
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
     - system.menu.account
   module:
+    - node
     - system
   theme:
     - showcase_lite
@@ -24,4 +25,11 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

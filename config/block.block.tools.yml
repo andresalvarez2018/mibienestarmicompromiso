@@ -1,10 +1,11 @@
 uuid: f212d885-f050-454a-8849-38cf9ff88f4c
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
     - system.menu.tools
   module:
+    - node
     - system
   theme:
     - showcase_lite
@@ -24,4 +25,11 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

@@ -1,0 +1,55 @@
+uuid: f3b02fdb-d2c6-4058-bdb4-67c31bc080d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.cta
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_yoast_seo
+    - image.style.cta
+    - node.type.article
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
+id: node.article.cta
+targetEntityType: node
+bundle: article
+mode: cta
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 30
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: cta
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  comment: true
+  field_meta_tags: true
+  field_tags: true
+  field_yoast_seo: true
+  langcode: true
+  links: true

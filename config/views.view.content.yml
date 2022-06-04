@@ -2,13 +2,16 @@ uuid: 5add8515-5e4a-4a88-9dd9-1faab958afe0
 langcode: es
 status: true
 dependencies:
+  config:
+    - field.storage.node.field_yoast_seo
   module:
     - node
     - user
+    - yoast_seo
 _core:
   default_config_hash: vBKWYGGDoAX-tFd1JErB8tZLSxx3lJ0foouVsgpcbB4
 id: content
-label: Contenido
+label: Content
 module: node
 description: 'Encontrar y administrar contenido.'
 tag: default
@@ -17,11 +20,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: Contenido
+      title: Content
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -132,7 +135,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -150,7 +153,7 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: field
-          label: Estado
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -163,8 +166,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: 'Sin publicar'
-            format_custom_true: Publicado
+            format_custom_false: Unpublished
+            format_custom_true: Published
         changed:
           id: changed
           table: node_field_data
@@ -172,7 +175,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -195,7 +198,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -237,21 +240,27 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: true
+        field_yoast_seo:
+          id: field_yoast_seo
+          table: node__field_yoast_seo
+          field: field_yoast_seo
+          plugin_id: field
+          type: yoastseo_formatter
       pager:
         type: full
         options:
           items_per_page: 50
           tags:
-            next: 'Siguiente >'
-            previous: '‹ Anterior'
-            first: '« Primero'
-            last: 'Último »'
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Restablecer
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -374,7 +383,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Estado
+            label: Status
             description: ''
             use_operator: false
             operator: status_op
@@ -388,7 +397,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Estado de publicación'
+            label: 'Published status'
             description: ''
             identifier: status
             optional: true
@@ -399,11 +408,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Publicado
+                title: Published
                 operator: '='
                 value: '1'
               2:
-                title: 'Sin publicar'
+                title: Unpublished
                 operator: '='
                 value: '0'
         langcode:
@@ -422,7 +431,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -582,10 +591,11 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'
   page_1:
     id: page_1
-    display_title: Página
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:
@@ -593,14 +603,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Contenido
+        title: Content
         description: ''
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: Contenido
+        title: Content
         description: 'Encuentre y gestione el contenido'
         weight: -10
         menu_name: admin
@@ -614,4 +624,5 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_yoast_seo'

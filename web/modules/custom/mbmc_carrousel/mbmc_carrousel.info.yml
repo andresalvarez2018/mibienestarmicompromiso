@@ -1,0 +1,9 @@
+name: 'MBMC Carousel'
+type: module
+description: 'Carousel of images'
+core_version_requirement: ^8 || ^9
+package: 'MBMC'
+dependencies:
+  - media
+  - media_library
+  - mbmc

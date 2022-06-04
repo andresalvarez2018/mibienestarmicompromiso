@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Showcase Lites's theme implementation to display a Article node.
+ */
+#}
+{{ attach_library('mbmc/libraries') }}
+{{ attach_library('mbmc_card/libraries') }}
+{# Card Item #}
+<div class="lib-comp-card">
+  <div class="lib-comp-card__image">
+    {{ content.field_image }}
+  </div>
+  <div class="lib-comp-card__content">
+    <h2 class="lib-comp-card__title">
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  </div>
+</div>
+{# End Card Item #}

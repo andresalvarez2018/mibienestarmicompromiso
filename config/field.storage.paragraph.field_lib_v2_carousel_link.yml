@@ -1,0 +1,19 @@
+uuid: 25abdb98-a0e0-40b8-a032-2c8772899f83
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_lib_v2_carousel_link
+field_name: field_lib_v2_carousel_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

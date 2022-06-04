@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Contains mbmc_card.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
+
+/**
+ * Implements hook_help().
+ */
+function mbmc_card_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the mbmc_card module.
+        case 'help.page.mbmc_card':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Card with description') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mbmc_card_theme()
+{
+    return [
+        'mbmc_card' => [
+            'render element' => 'children',
+        ],
+    ];
+}
+function mbmc_card_theme_suggestions_block_alter(array &$suggestions, array $variables, $hook)
+{
+    if (isset($variables['elements']['content']['#block_content'])) {
+        array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+    }
+}
+
+function mbmc_card_preprocess_paragraph(&$variables)
+{
+    /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+    $paragraph = $variables['paragraph'];
+    // Get the type
+    $parentBundle = $paragraph->bundle();
+
+    if ("lib_v2_cards_group" == $parentBundle) {
+
+        $variables['card_group']['columns'] = 'grid-' . $paragraph->get('field_lib_v2_cards_group_colum')->getValue()[0]['value'];
+        foreach ($paragraph->get('field_lib_v2_cards_group_ref')->getValue() as $clave => $element) {
+            $p = \Drupal\paragraphs\Entity\Paragraph::load($element['target_id']);
+            $variables['card_group']['items'][$clave]['title'] = $p->field_lib_v2_cards_title->getValue()[0]['value'];
+            $variables['card_group']['items'][$clave]['desc'] = $p->field_lib_v2_cards_desc->getValue()[0]['value'];
+            $fid = $p->field_lib_v2_cards_image->getValue()[0]['target_id'];
+            $media = Media::load($fid);
+            $fid = $media->getSource()->getSourceFieldValue($media);
+            $file = File::load($fid);
+            $variables['card_group']['items'][$clave]['imagen'] = file_create_url($file->getFileUri());
+            $variables['card_group']['items'][$clave]['link']['uri'] = $p->field_lib_v2_cards_link->getValue()[0]['uri'];
+            $variables['card_group']['items'][$clave]['link']['text'] = $p->field_lib_v2_cards_link->getValue()[0]['title'];
+        }
+    }
+}

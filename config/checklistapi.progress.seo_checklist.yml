@@ -1,0 +1,62 @@
+progress:
+  '#changed': 1654185680
+  '#changed_by': '1'
+  '#completed_items': 19
+  '#items':
+    install_and_enable_seo_checklist_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_admin_toolbar_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    enable_clean_urls:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_redirect_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    configure_the_redirect_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_pathauto_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    configure_pathauto_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    create_pathauto_patterns:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_metatag_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_schema_metatag:
+      '#completed': 1654185680
+      '#uid': '1'
+    set_metatags_for_your_site:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_alternate_hreflang_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_xml_sitemap_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    configure_xml_sitemap_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_robotstxt_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    add_xml_sitemap_to_your_robotstxt_file:
+      '#completed': 1654185680
+      '#uid': '1'
+    set_up_cron:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_search_404_module:
+      '#completed': 1654185680
+      '#uid': '1'
+    install_and_enable_yoast_seo_module:
+      '#completed': 1654185680
+      '#uid': '1'

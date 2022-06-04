@@ -1,0 +1,15 @@
+uuid: 803eee06-c4aa-404f-9d90-06f50aefe5e7
+langcode: es
+status: true
+dependencies: {  }
+name: 4_3_paragraphs
+label: '4:3 paragraphs'
+effects:
+  12aa10ef-94aa-48b5-a0d0-0cc95bc0e512:
+    uuid: 12aa10ef-94aa-48b5-a0d0-0cc95bc0e512
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 570
+      height: 450
+      anchor: center-center

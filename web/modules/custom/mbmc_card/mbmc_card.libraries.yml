@@ -1,0 +1,7 @@
+libraries:
+  version: VERSION
+  css:
+    component:
+      css/index.css : {}
+  js:
+    js/index.js : {}

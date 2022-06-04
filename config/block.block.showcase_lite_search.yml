@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - node
     - search
   theme:
     - showcase_lite
@@ -20,4 +21,11 @@ settings:
   label_display: visible
   provider: search
   page_id: ''
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

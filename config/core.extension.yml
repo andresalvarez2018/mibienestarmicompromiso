@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 langcode: es
 module:
+  addtoany: 0
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
@@ -10,45 +11,70 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  checklistapi: 0
   ckeditor: 0
   color: 0
   comment: 0
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
+  devel_kint_extras: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
+  hreflang: 0
   image: 0
   language: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
   locale: 0
+  mbmc: 0
+  mbmc_card: 0
+  mbmc_carrousel: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
   rdf: 0
+  redirect: 0
+  robotstxt: 0
   search: 0
+  search404: 0
+  seo_checklist: 0
   shortcut: 0
+  statistics: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   views_ui: 0
+  yoast_seo: 0
+  pathauto: 1
+  xmlsitemap: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   claro: 0

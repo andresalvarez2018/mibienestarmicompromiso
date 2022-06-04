@@ -1,0 +1,10 @@
+uuid: 5f09581b-e6d8-4188-a938-49a7d2dba12c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.cta
+label: CTA
+targetEntityType: node
+cache: true

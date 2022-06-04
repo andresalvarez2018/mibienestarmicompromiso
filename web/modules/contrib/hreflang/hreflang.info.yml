@@ -1,0 +1,12 @@
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+description: Automatically adds an hreflang tag to the page for each enabled language.
+name: Hreflang
+package: Multilingual
+type: module
+configure: hreflang.admin_settings
+
+# Information added by Drupal.org packaging script on 2022-02-28
+version: '8.x-1.9'
+project: 'hreflang'
+datestamp: 1646083446

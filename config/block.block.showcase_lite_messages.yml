@@ -1,5 +1,5 @@
 uuid: ce7e87ab-4442-4730-905d-b7acdf5bf420
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -11,7 +11,7 @@ _core:
 id: showcase_lite_messages
 theme: showcase_lite
 region: system_messages
-weight: -5
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

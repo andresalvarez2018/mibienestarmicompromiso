@@ -1,0 +1,9 @@
+name: 'MBMC Card'
+type: module
+description: 'Card with description'
+core_version_requirement: ^8 || ^9
+package: 'Esinergia'
+dependencies: 
+  - mbmc
+  - media
+  - media_library

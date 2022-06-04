@@ -1,5 +1,5 @@
 uuid: dbcab0ac-115b-4d7c-ae12-60dce89b9804
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ _core:
 id: showcase_lite_main_menu
 theme: showcase_lite
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

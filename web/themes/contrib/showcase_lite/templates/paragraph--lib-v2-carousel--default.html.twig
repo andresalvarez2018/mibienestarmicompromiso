@@ -1,0 +1,40 @@
+{{ attach_library('mbmc/libraries') }}
+{{ attach_library('mbmc_carrousel/libraries') }}
+
+<div class="lib-comp-carrousel">
+	<div class="lib-comp-carrousel__items">
+		{% for key, item in card_carrusel %}
+			{# Items carrousel #}
+			{% if key == 0 %}
+				<div class="lib-comp-carrousel__item lib-comp-carrousel__item__{{key + 1}} is-active">
+				{% else %}
+					<div class="lib-comp-carrousel__item lib-comp-carrousel__item__{{key + 1}}">
+					{% endif %}
+					<div class="lib-comp-carrousel__card">
+						<div class="lib-comp-carrousel__content lib-comp-carrousel__content__{{item.background}}">
+							<div class="lib-comp-carrousel__textwrap">
+								<span class="lib-comp-carrousel__subheading">{{item.subtitle}}</span>
+								<h2 class="lib-comp-carrousel__title">{{item.title}}</h2>
+								<h3 class="lib-comp-carrousel__subtitle">{{item.subheading}}</h3>
+								<a href="{{item.link.uri}}" class="lib-comp-button lib-comp-carrousel__button lib-comp-button__{{item.link.color}}">{{item.link.text}}</a>
+							</div>
+						</div>
+						<div class="lib-comp-carrousel__image">
+							<div class="field__item">
+								<img src="{{item.imagen}}" width="480" height="270" alt="Easy" loading="lazy" typeof="foaf:Image" class="image-style-large">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				{# End Items carrousel #}
+		{% endfor %}
+	</div>
+
+	<div class="lib-comp-carrousel__nav">
+		{# circles #}
+		{% for key, item in content.field_lib_v2_carousel_group_ref if key|first != '#' %}
+			<span class="lib-comp-carrousel__circle lib-comp-carrousel__circle__{{key + 1}}">{{key}}</span>
+		{% endfor %}
+	</div>
+</div>
