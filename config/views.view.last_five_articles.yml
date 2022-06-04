@@ -194,6 +194,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: 'Ultimos 5 artículos publicados'
       sorts:
         created:
           id: created
@@ -212,6 +213,7 @@ display:
           exposed: false
           granularity: second
       defaults:
+        title: false
         sorts: false
       display_description: 'Ultimos 5 articulos'
       display_extenders: {  }
@@ -229,12 +231,14 @@ display:
     display_plugin: block
     position: 2
     display_options:
+      title: 'Ultimos 5 artículos mas vistos'
       pager:
         type: some
         options:
           offset: 0
           items_per_page: 5
       defaults:
+        title: false
         pager: false
       display_description: ''
       display_extenders: {  }
