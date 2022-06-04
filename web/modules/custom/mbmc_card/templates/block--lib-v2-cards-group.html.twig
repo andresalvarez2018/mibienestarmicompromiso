@@ -1,0 +1,21 @@
+{{ attach_library('lib_v2_core/libraries') }}
+{{ attach_library('lib_cards_v2/libraries') }}
+<div class="lib-comp-cardlist">
+    <div class="lib-comp-cardlist__container {{content.field_lib_v2_cards_group_ref.0['#markup']}}">
+        {% for key, item in content.field_lib_v2_cards_group_r if key|first != '#' %}
+
+            {# Card Item #}
+            <div class="lib-comp-card">
+                <div class="lib-comp-card__image">{{item.field_lib_v2_cards_image}}</div>
+                <div class="lib-comp-card__content">
+                    <h2 class="lib-comp-card__title">{{item.field_lib_v2_cards_title}}</h2>
+                    <div class="lib-comp-card__body">
+                        {{item.field_lib_v2_cards_desc}}
+                    </div>
+                    <a href="#" class="lib-comp-button lib-comp-card__button">{{item.field_lib_v2_cards_link}}</a>
+                </div>
+            </div>
+            {# End Card Item #}
+        {% endfor %}
+    </div>
+</div>

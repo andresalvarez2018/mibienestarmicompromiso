@@ -20,3 +20,6 @@
 .alert .close:hover {
   color: inherit;
 }
+.padding-card {
+  padding: 1rem;
+}

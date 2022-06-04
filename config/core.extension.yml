@@ -41,6 +41,7 @@ module:
   link: 0
   locale: 0
   mbmc: 0
+  mbmc_card: 0
   mbmc_carrousel: 0
   media: 0
   media_library: 0

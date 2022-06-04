@@ -3,13 +3,14 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.cta
     - node.type.article
   module:
     - node
     - statistics
     - user
 id: last_five_articles
-label: Articulos
+label: 'Artículos relacionados'
 module: views
 description: 'Datos articulos'
 tag: ''
@@ -152,9 +153,21 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: default
+        type: grid
+        options:
+          uses_fields: false
+          columns: 2
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: padding_card
+          col_class_default: true
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: cta
       query:
         type: views_query
         options:
