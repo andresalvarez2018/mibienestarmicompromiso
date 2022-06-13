@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.food.field_code
     - field.field.node.food.field_protein_in_grams
     - field.field.node.food.field_remarks
+    - field.field.node.food.field_tag
     - field.field.node.food.field_weekly_quantity
     - node.type.food
   module:
@@ -28,5 +29,6 @@ hidden:
   field_code: true
   field_protein_in_grams: true
   field_remarks: true
+  field_tag: true
   field_weekly_quantity: true
   langcode: true

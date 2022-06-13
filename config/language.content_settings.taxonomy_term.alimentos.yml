@@ -1,0 +1,11 @@
+uuid: 4f9dac79-d77c-4078-b7cf-aa96200de557
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.alimentos
+id: taxonomy_term.alimentos
+target_entity_type_id: taxonomy_term
+target_bundle: alimentos
+default_langcode: site_default
+language_alterable: false
