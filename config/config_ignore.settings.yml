@@ -3,4 +3,4 @@ _core:
 langcode: es
 ignored_config_entities:
   - 'block.block.*'
-  - 'system.site.*'
+  - system.site
