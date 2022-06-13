@@ -23,6 +23,12 @@ settings:
     -
       value: '3_4'
       label: '3 a 4'
+    -
+      value: '4_5'
+      label: '4 a 5'
+    -
+      value: '5_7'
+      label: '5 a 7'
   allowed_values_function: ''
 module: options
 locked: false
