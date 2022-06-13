@@ -40,7 +40,7 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
+      image_link: ''
       image_style: cta
     third_party_settings: {  }
     weight: 0

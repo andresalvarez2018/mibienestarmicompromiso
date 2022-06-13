@@ -1,0 +1,32 @@
+uuid: 34d14b6c-f003-4df7-81fd-adaf3a0ea103
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food.field_calories
+    - field.field.node.food.field_code
+    - field.field.node.food.field_protein_in_grams
+    - field.field.node.food.field_remarks
+    - field.field.node.food.field_weekly_quantity
+    - node.type.food
+  module:
+    - user
+id: node.food.teaser
+targetEntityType: node
+bundle: food
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_calories: true
+  field_code: true
+  field_protein_in_grams: true
+  field_remarks: true
+  field_weekly_quantity: true
+  langcode: true

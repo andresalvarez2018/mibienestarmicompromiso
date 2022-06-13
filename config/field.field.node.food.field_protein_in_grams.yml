@@ -1,0 +1,25 @@
+uuid: a893847c-5b04-436a-b845-cc4caf536ed6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_protein_in_grams
+    - node.type.food
+id: node.food.field_protein_in_grams
+field_name: field_protein_in_grams
+entity_type: node
+bundle: food
+label: 'Proteínas en gramos'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

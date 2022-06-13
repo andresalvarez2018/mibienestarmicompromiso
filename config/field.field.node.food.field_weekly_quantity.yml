@@ -1,0 +1,21 @@
+uuid: 07e33a95-e9a4-483d-a5e3-0c9054b84f78
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weekly_quantity
+    - node.type.food
+  module:
+    - options
+id: node.food.field_weekly_quantity
+field_name: field_weekly_quantity
+entity_type: node
+bundle: food
+label: 'Cantidad Semanal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

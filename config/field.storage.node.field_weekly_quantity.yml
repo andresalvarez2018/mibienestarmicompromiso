@@ -1,0 +1,30 @@
+uuid: df31f489-54b3-4e14-b902-11d8071161cb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_weekly_quantity
+field_name: field_weekly_quantity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '3_5'
+      label: '3 a 5'
+    -
+      value: '1_2'
+      label: '1 a 2'
+    -
+      value: '2_3'
+      label: '2 a 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

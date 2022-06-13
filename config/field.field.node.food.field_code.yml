@@ -1,0 +1,19 @@
+uuid: d73897b7-69c5-411e-a77a-6f44d450fce3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code
+    - node.type.food
+id: node.food.field_code
+field_name: field_code
+entity_type: node
+bundle: food
+label: Código
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

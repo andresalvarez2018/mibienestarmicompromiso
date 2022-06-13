@@ -1,0 +1,70 @@
+uuid: 5b4c5e80-9da0-452b-9ea1-7bef5312c16d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.food.field_calories
+    - field.field.node.food.field_code
+    - field.field.node.food.field_protein_in_grams
+    - field.field.node.food.field_remarks
+    - field.field.node.food.field_weekly_quantity
+    - node.type.food
+  module:
+    - options
+    - text
+    - user
+id: node.food.default
+targetEntityType: node
+bundle: food
+mode: default
+content:
+  field_calories:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_protein_in_grams:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_remarks:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_weekly_quantity:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
