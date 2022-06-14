@@ -1,0 +1,24 @@
+uuid: 7bc7500d-040d-4598-a14e-8e0201998184
+langcode: es
+status: true
+dependencies:
+  module:
+    - country_state_city
+    - user
+id: user.field_location
+field_name: field_location
+entity_type: user
+type: country_state_city_type
+settings:
+  country_lable: ''
+  state_lable: ''
+  city_lable: ''
+  is_ascii: false
+  case_sensitive: false
+module: country_state_city
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

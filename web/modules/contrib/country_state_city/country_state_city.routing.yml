@@ -1,0 +1,134 @@
+# Country list data start.
+entity.countrylist.canonical:
+  path: '/countrylist/{countrylist}'
+  defaults:
+    _entity_view: 'countrylist'
+    _title: 'Country content'
+  requirements:
+    _entity_access: 'countrylist.view'
+
+entity.countrylist.collection:
+  path: '/admin/structure/csc-modes/countrylist'
+  defaults:
+    _entity_list: 'countrylist'
+    _title: 'Country list'
+  requirements:
+    _permission: 'view countrylist entity'
+
+countrylist.country_add:
+  path: '/admin/structure/csc-modes/countrylist/add'
+  defaults:
+    _entity_form: countrylist.default
+    _title: 'Add countrylist'
+  requirements:
+    _entity_create_access: 'countrylist'
+
+entity.countrylist.edit_form:
+  path: '/admin/structure/csc-modes/countrylist/{countrylist}/edit'
+  defaults:
+    _entity_form: countrylist.default
+    _title: 'Edit countrylist'
+  requirements:
+    _entity_access: 'countrylist.update'
+
+entity.countrylist.delete_form:
+  path: '/admin/structure/csc-modes/countrylist/{countrylist}/delete'
+  defaults:
+    _entity_form: countrylist.delete
+    _title: 'Delete countrylist'
+  requirements:
+    _entity_access: 'countrylist.delete'
+
+# End country list data start.
+
+# State list data start.
+entity.statelist.canonical:
+  path: '/statelist/{statelist}'
+  defaults:
+    _entity_view: 'statelist'
+    _title: 'State content'
+  requirements:
+    _entity_access: 'statelist.view'
+
+entity.statelist.collection:
+  path: '/admin/structure/csc-modes/statelist'
+  defaults:
+    _entity_list: 'statelist'
+    _title: 'State list'
+  requirements:
+    _permission: 'view statelist entity'
+
+statelist.state_add:
+  path: '/admin/structure/csc-modes/statelist/add'
+  defaults:
+    _entity_form: statelist.default
+    _title: 'Add statelist'
+  requirements:
+    _entity_create_access: 'statelist'
+
+entity.statelist.edit_form:
+  path: '/admin/structure/csc-modes/statelist/{statelist}/edit'
+  defaults:
+    _entity_form: statelist.default
+    _title: 'Edit statelist'
+  requirements:
+    _entity_access: 'statelist.update'
+
+entity.statelist.delete_form:
+  path: '/admin/structure/csc-modes/statelist/{statelist}/delete'
+  defaults:
+    _entity_form: statelist.delete
+    _title: 'Delete statelist'
+  requirements:
+    _entity_access: 'statelist.delete'
+
+# End state list data start.
+
+# City list data start.
+entity.citylist.canonical:
+  path: '/citylist/{citylist}'
+  defaults:
+    _entity_view: 'citylist'
+    _title: 'City content'
+  requirements:
+    _entity_access: 'citylist.view'
+
+entity.citylist.collection:
+  path: '/admin/structure/csc-modes/citylist'
+  defaults:
+    _entity_list: 'citylist'
+    _title: 'City list'
+  requirements:
+    _permission: 'view citylist entity'
+
+citylist.city_add:
+  path: '/admin/structure/csc-modes/citylist/add'
+  defaults:
+    _entity_form: citylist.default
+    _title: 'Add citylist'
+  requirements:
+    _entity_create_access: 'citylist'
+
+entity.citylist.edit_form:
+  path: '/admin/structure/csc-modes/citylist/{citylist}/edit'
+  defaults:
+    _entity_form: citylist.default
+    _title: 'Edit citylist'
+  requirements:
+    _entity_access: 'citylist.update'
+
+entity.citylist.delete_form:
+  path: '/admin/structure/csc-modes/citylist/{citylist}/delete'
+  defaults:
+    _entity_form: citylist.delete
+    _title: 'Delete citylist'
+  requirements:
+    _entity_access: 'citylist.delete'
+
+country_state_city.csc_interface:
+  path: '/admin/structure/csc-modes'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Country state city  Interface'
+  requirements:
+    _permission: 'administer site configuration'

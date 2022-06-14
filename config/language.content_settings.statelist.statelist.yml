@@ -1,0 +1,19 @@
+uuid: 7c2325d3-9f52-4cdc-a965-2754761354a5
+langcode: es
+status: true
+dependencies:
+  module:
+    - content_translation
+    - country_state_city
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: IW7n59eunh7TN9BbVq9YmVKCiFCjImOgRFZXXhhxYuo
+id: statelist.statelist
+target_entity_type_id: statelist
+target_bundle: statelist
+default_langcode: en
+language_alterable: true

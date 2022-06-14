@@ -1,0 +1,20 @@
+countrylist.country_add:
+  route_name: countrylist.country_add
+  title: 'Add Country'
+  appears_on:
+    - entity.countrylist.collection
+    - entity.countrylist.canonical
+
+statelist.country_add:
+  route_name: statelist.state_add
+  title: 'Add State'
+  appears_on:
+    - entity.statelist.collection
+    - entity.statelist.canonical
+
+citylist.city_add:
+  route_name: citylist.city_add
+  title: 'Add City'
+  appears_on:
+    - entity.citylist.collection
+    - entity.citylist.canonical

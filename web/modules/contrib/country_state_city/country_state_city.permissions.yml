@@ -1,0 +1,26 @@
+'delete countrylist entity':
+  title: Delete entity content
+'add countrylist entity':
+  title: Add entity content
+'view countrylist entity':
+  title: View entity content
+'edit countrylist entity':
+  title: Edit entity content
+
+'delete statelist entity':
+  title: Delete entity content
+'add statelist entity':
+  title: Add entity content
+'view statelist entity':
+  title: View entity content
+'edit statelist entity':
+  title: Edit entity content
+
+'delete citylist entity':
+  title: Delete entity content
+'add citylist entity':
+  title: Add entity content
+'view citylist entity':
+  title: View entity content
+'edit citylist entity':
+  title: Edit entity content

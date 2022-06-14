@@ -1,0 +1,14 @@
+name: State Data
+type: module
+description: 'Import state data.'
+package: CSC
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - country_state_city
+  - country_state_city:csc_country_data
+
+# Information added by Drupal.org packaging script on 2021-04-11
+version: '8.x-2.1'
+project: 'country_state_city'
+datestamp: 1618122059

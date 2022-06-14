@@ -1,0 +1,20 @@
+uuid: 3d52366f-8083-4357-b51e-3e2d795c5dab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_working
+  module:
+    - user
+id: user.user.field_working
+field_name: field_working
+entity_type: user
+bundle: user
+label: Oficio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

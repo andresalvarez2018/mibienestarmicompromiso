@@ -1,0 +1,19 @@
+uuid: 16a876a7-829b-440a-8c14-681aaf00b73b
+langcode: es
+status: true
+dependencies:
+  module:
+    - content_translation
+    - country_state_city
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: V0hxrGz8IghGvrjtUlCxAdnkLeECDJbJcognl3jZK90
+id: citylist.citylist
+target_entity_type_id: citylist
+target_bundle: citylist
+default_langcode: en
+language_alterable: true

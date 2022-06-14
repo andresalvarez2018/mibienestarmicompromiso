@@ -1,0 +1,21 @@
+uuid: 8e05cdad-9661-4c99-aa82-b1ce8f6b83af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_gender
+  module:
+    - options
+    - user
+id: user.user.field_gender
+field_name: field_gender
+entity_type: user
+bundle: user
+label: Genero
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

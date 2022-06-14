@@ -1,0 +1,23 @@
+country_state_city.css_interface:
+  title: 'Country state city  Interface'
+  description: 'Allows admin user to check list of country, state and city.'
+  parent: system.admin_structure
+  route_name: country_state_city.csc_interface
+
+country_state_city.countrylist_interface:
+  title: 'Country list'
+  description: 'List of country data.'
+  parent: country_state_city.css_interface
+  route_name: entity.countrylist.collection
+
+country_state_city.statelist_interface:
+  title: 'State list'
+  description: 'List of state data.'
+  parent: country_state_city.css_interface
+  route_name: entity.statelist.collection
+
+country_state_city.citylist_interface:
+  title: 'City list'
+  description: 'List of city data.'
+  parent: country_state_city.css_interface
+  route_name: entity.citylist.collection

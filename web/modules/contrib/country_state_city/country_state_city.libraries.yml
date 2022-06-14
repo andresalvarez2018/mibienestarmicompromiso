@@ -1,0 +1,10 @@
+country_state_city.search_option:
+  version: 1.x
+  css:
+    theme:
+      css/select2.css: {}
+  js:
+    js/select2.js: {}
+    js/search_option.js: {}
+  dependencies:
+    - core/jquery

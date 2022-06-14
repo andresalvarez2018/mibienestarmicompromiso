@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -24,6 +28,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/country_state_city": "^2.1",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
         "drupal/gin": "^3.0@alpha",
@@ -32,15 +37,19 @@
         "drupal/hreflang": "^1.9",
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.10",
+        "drupal/phone_international": "^3.2",
         "drupal/redirect": "^1.7",
         "drupal/robotstxt": "^1.4",
         "drupal/schema_metatag": "^2.3",
         "drupal/search404": "^2.0",
         "drupal/seo_checklist": "^5.1",
         "drupal/showcase_lite": "^1.3",
+        "drupal/smtp": "^1.0",
         "drupal/xmlsitemap": "^1.2",
         "drupal/yoast_seo": "^1.7",
-        "drush/drush": "^11.0"
+        "drush/drush": "^11.0",
+        "npm-asset/intl-tel-input": "^17.0",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -52,21 +61,28 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "extra": {
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             }
         },
         "installer-paths": {
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
+            ],
             "web/core": [
                 "type:drupal-core"
-            ],
-            "web/libraries/{$name}": [
-                "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"

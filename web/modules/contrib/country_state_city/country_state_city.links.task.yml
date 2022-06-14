@@ -1,0 +1,62 @@
+country.settings_tab:
+  route_name: entity.countrylist.edit_form
+  title: Settings
+  base_route: entity.countrylist.edit_form
+
+country.view:
+  route_name: entity.countrylist.canonical
+  base_route: entity.countrylist.canonical
+  title: View
+
+country.page_edit:
+  route_name: entity.countrylist.edit_form
+  base_route: entity.countrylist.canonical
+  title: Edit
+
+country.delete_confirm:
+  route_name:  entity.countrylist.delete_form
+  base_route:  entity.countrylist.canonical
+  title: Delete
+  weight: 10
+
+state.settings_tab:
+  route_name: entity.statelist.edit_form
+  title: Settings
+  base_route: entity.statelist.edit_form
+
+state.view:
+  route_name: entity.statelist.canonical
+  base_route: entity.statelist.canonical
+  title: View
+
+state.page_edit:
+  route_name: entity.statelist.edit_form
+  base_route: entity.statelist.canonical
+  title: Edit
+
+state.delete_confirm:
+  route_name:  entity.statelist.delete_form
+  base_route:  entity.statelist.canonical
+  title: Delete
+  weight: 10
+
+city.settings_tab:
+  route_name: entity.citylist.edit_form
+  title: Settings
+  base_route: entity.citylist.edit_form
+
+city.view:
+  route_name: entity.citylist.canonical
+  base_route: entity.citylist.canonical
+  title: View
+
+city.page_edit:
+  route_name: entity.citylist.edit_form
+  base_route: entity.citylist.canonical
+  title: Edit
+
+city.delete_confirm:
+  route_name:  entity.citylist.delete_form
+  base_route:  entity.citylist.canonical
+  title: Delete
+  weight: 10

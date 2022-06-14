@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Here we are importing country data from csv.
+ */
+
+use Drupal\country_state_city\Entity\CountryList;
+
+/**
+ * Implements hook_install().
+ */
+function csc_country_data_install() {
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('csc_country_data')->getPath();
+  // Importando os dados dos paises.
+  $array = $fields = [];
+  $i = 0;
+  $handle = @fopen($module_path . '/countries.csv', "r");
+  if ($handle) {
+    while (($row = fgetcsv($handle, 4096)) !== FALSE) {
+      if (empty($fields)) {
+        $fields = $row;
+        continue;
+      }
+      foreach ($row as $k => $value) {
+        $array[$i][$fields[$k]] = $value;
+      }
+      $i++;
+    }
+    if (!feof($handle)) {
+      echo "Error: unexpected fgets() fail\n";
+    }
+    fclose($handle);
+  }
+
+  // Criando um registro na entidade country para cada pais importado.
+  if (is_array($array) && count($array) > 0) {
+    foreach ($array as $country) {
+      $new_country = CountryList::create([
+        'id' => $country['id'],
+        'name' => $country['name'],
+        'iso3' => $country['iso3'],
+        'iso2' => $country['iso2'],
+        'currency' => $country['currency'],
+      ]);
+      $new_country->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function csc_country_data_uninstall() {
+  $current_country_message = \Drupal::entityTypeManager()->getDefinition('countrylist');
+  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  $original_country = $entity_definition_update_manager->getEntityType('countrylist');
+  $entity_definition_update_manager->uninstallEntityType($current_country_message);
+  $entity_definition_update_manager->installEntityType($original_country);
+}

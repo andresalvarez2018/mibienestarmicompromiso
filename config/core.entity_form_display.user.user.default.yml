@@ -3,10 +3,22 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_date_birthday
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_location
+    - field.field.user.user.field_number_identification
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_profession
+    - field.field.user.user.field_working
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - country_state_city
+    - datetime
     - image
+    - path
+    - phone_international
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -21,9 +33,77 @@ content:
   contact:
     weight: 5
     region: content
+  field_date_birthday:
+    type: datetime_default
+    weight: 34
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_full_name:
+    type: string_textfield
+    weight: 31
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_gender:
+    type: options_select
+    weight: 33
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    type: country_state_city_widget
+    weight: 35
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_number_identification:
+    type: string_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: phone_international_widget
+    weight: 36
+    region: content
+    settings:
+      geolocation: false
+      initial_country: PT
+      exclude_countries: {  }
+      preferred_countries:
+        - PT
+      countries: exclude
+    third_party_settings: {  }
+  field_profession:
+    type: string_textfield
+    weight: 37
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_working:
+    type: string_textfield
+    weight: 38
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   language:
     weight: 0
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content

@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Here we are importing city data from csv.
+ */
+
+use Drupal\country_state_city\Entity\CityList;
+
+/**
+ * Implements hook_install().
+ */
+function csc_city_data_install() {
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('csc_city_data')->getPath();
+  // Importando os dados dos paises.
+  $array = $fields = [];
+  $i = 0;
+  $handle = @fopen($module_path . '/cities.csv', "r");
+  if ($handle) {
+    while (($row = fgetcsv($handle, 4096)) !== FALSE) {
+      if (empty($fields)) {
+        $fields = $row;
+        continue;
+      }
+      foreach ($row as $k => $value) {
+        $array[$i][$fields[$k]] = $value;
+      }
+      $i++;
+    }
+    if (!feof($handle)) {
+      echo "Error: unexpected fgets() fail\n";
+    }
+    fclose($handle);
+  }
+
+  // Criando um registro na entidade country para cada pais importado.
+  if (is_array($array) && count($array) > 0) {
+    foreach ($array as $city) {
+      $new_city = CityList::create([
+        'id' => $city['id'],
+        'name' => $city['name'],
+        'state_id' => $city['state_id'],
+      ]);
+      $new_city->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function csc_city_data_uninstall() {
+  $current_contact_message = \Drupal::entityTypeManager()->getDefinition('citylist');
+  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  $original_contact_message = $entity_definition_update_manager->getEntityType('citylist');
+  $entity_definition_update_manager->uninstallEntityType($current_contact_message);
+  $entity_definition_update_manager->installEntityType($original_contact_message);
+}

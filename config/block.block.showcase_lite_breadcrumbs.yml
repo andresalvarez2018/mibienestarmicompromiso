@@ -11,7 +11,7 @@ _core:
 id: showcase_lite_breadcrumbs
 theme: showcase_lite
 region: banner
-weight: -5
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
