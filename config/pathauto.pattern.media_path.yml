@@ -1,0 +1,26 @@
+uuid: 02c1ee7e-d838-42b7-9678-a5fffceaf440
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media_path
+label: 'Media path'
+type: 'canonical_entities:media'
+pattern: '/[media:url]'
+selection_criteria:
+  b186d8cc-a0e6-4b57-940e-5f47ea44a132:
+    id: 'entity_bundle:media'
+    negate: false
+    uuid: b186d8cc-a0e6-4b57-940e-5f47ea44a132
+    context_mapping:
+      media: media
+    bundles:
+      audio: audio
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+selection_logic: and
+weight: -5
+relationships: {  }

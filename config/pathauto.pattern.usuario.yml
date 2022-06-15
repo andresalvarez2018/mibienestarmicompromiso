@@ -1,0 +1,14 @@
+uuid: f4f8bc36-7aeb-41da-813d-894341bfd4ad
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: usuario
+label: usuario
+type: 'canonical_entities:user'
+pattern: '/[user:field_full_name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -16,7 +16,7 @@ tips:
   language-overview:
     id: language-overview
     plugin: text
-    label: Idiomas
+    label: Languages
     weight: 1
     body: '<p>La página “Idiomas” le permite añadir, editar, borrar y reordenar idiomas para el sitio.</p>'
   language-add:

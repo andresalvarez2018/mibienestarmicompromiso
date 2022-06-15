@@ -5,18 +5,19 @@ dependencies:
   module:
     - node
 id: title_node
-label: 'title node'
+label: 'Title node'
 type: 'canonical_entities:node'
 pattern: '/[node:title]'
 selection_criteria:
-  a7b74702-9a71-447b-a8f7-3d15ccbf422b:
+  c910072b-2830-494d-958c-fb07c3d763e0:
     id: 'entity_bundle:node'
     negate: false
-    uuid: a7b74702-9a71-447b-a8f7-3d15ccbf422b
+    uuid: c910072b-2830-494d-958c-fb07c3d763e0
     context_mapping:
       node: node
     bundles:
       article: article
+      food: food
       page: page
 selection_logic: and
 weight: -5

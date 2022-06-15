@@ -1,0 +1,23 @@
+uuid: 3d9db8a8-ae44-4cf8-ba42-3e48dd078394
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy
+label: taxonomy
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  a09f0c69-c992-4ff6-aeb3-a29cbb9e7c36:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a09f0c69-c992-4ff6-aeb3-a29cbb9e7c36
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      alimentos: alimentos
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }
