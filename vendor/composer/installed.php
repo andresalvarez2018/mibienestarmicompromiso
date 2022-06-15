@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1da6b33c573f3a48d70dd3f9625d7a89d46f8d8a',
+        'reference' => 'ce1ddaddad32639185d6893ec711e1236acb8430',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -309,6 +309,15 @@
             'replaced' => array(
                 0 => '9.3.16',
             ),
+        ),
+        'drupal/captcha' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/captcha',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
         ),
         'drupal/checklistapi' => array(
             'pretty_version' => '2.0.0',
@@ -967,13 +976,22 @@
                 0 => '9.3.16',
             ),
         ),
+        'drupal/recaptcha' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/recaptcha',
+            'aliases' => array(),
+            'reference' => '8.x-3.0',
+            'dev_requirement' => false,
+        ),
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1da6b33c573f3a48d70dd3f9625d7a89d46f8d8a',
+            'reference' => 'ce1ddaddad32639185d6893ec711e1236acb8430',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
@@ -1180,6 +1198,15 @@
                 0 => '9.3.16',
             ),
         ),
+        'drupal/webform' => array(
+            'pretty_version' => '6.1.3',
+            'version' => '6.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/webform',
+            'aliases' => array(),
+            'reference' => '6.1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/workflows' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1253,6 +1280,15 @@
             'install_path' => __DIR__ . '/../giggsey/locale',
             'aliases' => array(),
             'reference' => '9c1dca769253f6a3e81f9a5c167f53b6a54ab635',
+            'dev_requirement' => false,
+        ),
+        'google/recaptcha' => array(
+            'pretty_version' => '1.2.4',
+            'version' => '1.2.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../google/recaptcha',
+            'aliases' => array(),
+            'reference' => '614f25a9038be4f3f2da7cbfd778dc5b357d2419',
             'dev_requirement' => false,
         ),
         'grasmash/expander' => array(
