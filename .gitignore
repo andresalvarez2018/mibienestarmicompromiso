@@ -43,7 +43,6 @@ web/sites/default/settings.local.php
 /.gitattributes
 /autoload.php
 /example.gitignore
-/index.php
 /LICENSE.txt
 /README.txt
 /robots.txt
