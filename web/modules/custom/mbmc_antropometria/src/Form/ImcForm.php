@@ -114,9 +114,9 @@ class ImcForm extends FormBase
 
                 $node->save();
                 \Drupal::messenger()->addStatus(t('data successfully registered.'));
-                sleep(3);
-                header('Location: ../user');
-                exit;
+                // sleep(3);
+                // header('Location: ../user');
+                // exit;
 
             }
 
@@ -125,7 +125,6 @@ class ImcForm extends FormBase
             $node = Node::create(array(
                 'type' => 'antropometria',
                 'title' => 'antropometria de ' . $name,
-                'langcode' => 'es',
                 'uid' => $user_id,
                 'status' => 1,
                 'field_fields' => array(
@@ -140,9 +139,9 @@ class ImcForm extends FormBase
 
             \Drupal::messenger()->addStatus(t('data successfully registered.'));
 
-            sleep(3);
-            header('Location: ../user');
-            exit;
+            // sleep(3);
+            // header('Location: ../user');
+            // exit;
 
         }
 
