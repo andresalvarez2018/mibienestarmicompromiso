@@ -113,10 +113,11 @@ class ImcForm extends FormBase
                 $node->set('field_detalle_imc', $detalle_imc);
 
                 $node->save();
-                \Drupal::messenger()->addStatus(t('data successfully registered.'));
-                // sleep(3);
-                // header('Location: ../user');
-                // exit;
+                \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
+
+                sleep(5);
+                header('Location: /user/');
+                exit;
 
             }
 
@@ -137,11 +138,11 @@ class ImcForm extends FormBase
 
             $node->save();
 
-            \Drupal::messenger()->addStatus(t('data successfully registered.'));
+            \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
 
-            // sleep(3);
-            // header('Location: ../user');
-            // exit;
+            sleep(5);
+            header('Location: /user/');
+            exit;
 
         }
 

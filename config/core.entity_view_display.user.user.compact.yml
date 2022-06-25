@@ -1,6 +1,6 @@
 uuid: dbf39b22-de62-4cbe-8f0d-ad87b2dcaca6
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
