@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '68fef2ad8117caaecf3c26f93f0d14fef4051110',
+        'reference' => '9987d5a6ee372b3abc81a82da57420a39bab8355',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -838,6 +838,15 @@
                 0 => '9.3.16',
             ),
         ),
+        'drupal/login_destination' => array(
+            'pretty_version' => '2.0.0-beta1',
+            'version' => '2.0.0.0-beta1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/login_destination',
+            'aliases' => array(),
+            'reference' => '8.x-2.0-beta1',
+            'dev_requirement' => false,
+        ),
         'drupal/media' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -991,7 +1000,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '68fef2ad8117caaecf3c26f93f0d14fef4051110',
+            'reference' => '9987d5a6ee372b3abc81a82da57420a39bab8355',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(

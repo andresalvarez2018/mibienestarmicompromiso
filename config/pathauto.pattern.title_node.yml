@@ -9,16 +9,17 @@ label: 'Title node'
 type: 'canonical_entities:node'
 pattern: '/[node:title]'
 selection_criteria:
-  c910072b-2830-494d-958c-fb07c3d763e0:
+  6ace637b-032c-4ddf-b37f-b9e95a52bdfe:
     id: 'entity_bundle:node'
     negate: false
-    uuid: c910072b-2830-494d-958c-fb07c3d763e0
+    uuid: 6ace637b-032c-4ddf-b37f-b9e95a52bdfe
     context_mapping:
       node: node
     bundles:
       article: article
       food: food
       page: page
+      webform: webform
 selection_logic: and
 weight: -5
 relationships: {  }

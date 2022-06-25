@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - showcase_lite
@@ -19,4 +20,12 @@ settings:
   label: 'Main page content'
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      page: page

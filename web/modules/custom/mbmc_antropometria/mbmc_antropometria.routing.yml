@@ -1,0 +1,7 @@
+mbmbc_antropometria.imc:
+  path: '/form/imc'
+  defaults:
+    _form: '\Drupal\mbmc_antropometria\Form\ImcForm'
+    _title: 'Formulario Indice Corporal'
+  requirements:
+    _permission: 'access content'

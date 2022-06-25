@@ -1,0 +1,5 @@
+name: 'MBMC Antropometria'
+type: module
+description: 'Module for calculating body mass and waist hip ratio'
+package: 'MBMC'
+core_version_requirement: ^8.8 || ^9

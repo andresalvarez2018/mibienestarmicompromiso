@@ -388,7 +388,7 @@ nav > h2,
 .col-md-12 nav > h2,
 .col-md-12 .block-search > h2 {
   font-size: 35px;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
   margin: 0;
   border-bottom: none;
   font-weight: 300;

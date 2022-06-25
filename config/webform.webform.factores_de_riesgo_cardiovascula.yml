@@ -205,14 +205,16 @@ elements: |-
     '#type': webform_actions
     '#title': 'Submit button(s)'
     '#submit__label': Enviar
+    '#access_view_roles':
+      - authenticated
 css: ''
 javascript: ''
 settings:
-  ajax: true
+  ajax: false
   ajax_scroll_top: form
-  ajax_progress_type: fullscreen
-  ajax_effect: fade
-  ajax_speed: 500
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
   page_submit_path: ''
   page_confirm_path: ''
@@ -307,8 +309,8 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: modal
-  confirmation_url: ''
+  confirmation_type: url
+  confirmation_url: /form/factores-de-riesgo-cardiovascul
   confirmation_title: ''
   confirmation_message: ''
   confirmation_attributes: {  }
@@ -342,7 +344,6 @@ settings:
 access:
   create:
     roles:
-      - anonymous
       - authenticated
     users: {  }
     permissions: {  }

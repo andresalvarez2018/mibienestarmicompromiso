@@ -1,0 +1,11 @@
+uuid: 68061128-5ad9-4987-9400-519d4af159c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.antropometria
+id: node.antropometria
+target_entity_type_id: node
+target_bundle: antropometria
+default_langcode: site_default
+language_alterable: false

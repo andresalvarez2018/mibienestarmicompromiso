@@ -1,0 +1,32 @@
+uuid: 887d019c-b15b-4444-8f4a-9359f6c89f04
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.antropometria.field_altura
+    - field.field.node.antropometria.field_detalle_imc
+    - field.field.node.antropometria.field_indice_de_masa_corporal_
+    - field.field.node.antropometria.field_peso
+    - field.field.node.antropometria.field_relacion_cintura_cadera
+    - node.type.antropometria
+  module:
+    - user
+id: node.antropometria.teaser
+targetEntityType: node
+bundle: antropometria
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_altura: true
+  field_detalle_imc: true
+  field_indice_de_masa_corporal_: true
+  field_peso: true
+  field_relacion_cintura_cadera: true
+  langcode: true

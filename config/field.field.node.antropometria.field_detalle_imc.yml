@@ -1,0 +1,19 @@
+uuid: e836fdfe-8cb2-46ee-a6cb-df15c3a09c48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_detalle_imc
+    - node.type.antropometria
+id: node.antropometria.field_detalle_imc
+field_name: field_detalle_imc
+entity_type: node
+bundle: antropometria
+label: Detalle_imc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

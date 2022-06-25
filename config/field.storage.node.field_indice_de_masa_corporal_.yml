@@ -1,0 +1,21 @@
+uuid: 466594a7-026c-4f32-a1ec-0444d69098ad
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_indice_de_masa_corporal_
+field_name: field_indice_de_masa_corporal_
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -35,6 +35,7 @@
         "drupal/gin_login": "^1.2",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/hreflang": "^1.9",
+        "drupal/login_destination": "^2.0@beta",
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.10",
         "drupal/phone_international": "^3.2",

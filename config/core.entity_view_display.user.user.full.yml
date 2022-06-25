@@ -1,8 +1,9 @@
-uuid: b494bf00-0442-42fb-9427-2dd38e988c66
+uuid: 959290d7-91ca-44ee-a33f-830bc70d3cdf
 langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.user.full
     - field.field.user.user.field_date_birthday
     - field.field.user.user.field_full_name
     - field.field.user.user.field_gender
@@ -13,6 +14,7 @@ dependencies:
     - field.field.user.user.field_working
     - field.field.user.user.user_picture
     - image.style.thumbnail
+    - views.view.imc
   module:
     - country_state_city
     - datetime
@@ -22,6 +24,7 @@ dependencies:
     - options
     - phone_international
     - user
+    - views
 third_party_settings:
   layout_builder:
     enabled: true
@@ -32,8 +35,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          dc6503ae-a38a-4727-99e3-978798d4a039:
-            uuid: dc6503ae-a38a-4727-99e3-978798d4a039
+          71aa0fa6-bd38-4a9e-ba20-575d0753d218:
+            uuid: 71aa0fa6-bd38-4a9e-ba20-575d0753d218
             region: content
             configuration:
               id: 'field_block:user:user:user_picture'
@@ -49,8 +52,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          b744b176-d2a5-432a-b89a-dd89e0db1426:
-            uuid: b744b176-d2a5-432a-b89a-dd89e0db1426
+          17978672-8bd1-4d48-8f3a-745f659028da:
+            uuid: 17978672-8bd1-4d48-8f3a-745f659028da
             region: content
             configuration:
               id: 'extra_field_block:user:user:member_for'
@@ -59,8 +62,8 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 1
             additional: {  }
-          f1df5ba6-7d88-4119-8ddd-035df4da7541:
-            uuid: f1df5ba6-7d88-4119-8ddd-035df4da7541
+          46fe4478-8f34-48a4-967a-60284ce64c74:
+            uuid: 46fe4478-8f34-48a4-967a-60284ce64c74
             region: content
             configuration:
               id: 'field_block:user:user:field_full_name'
@@ -75,8 +78,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          75f5946c-c7e6-4d04-ab3e-d65f6bc8c97d:
-            uuid: 75f5946c-c7e6-4d04-ab3e-d65f6bc8c97d
+          236bb0de-59ae-4827-9265-00049506b1b6:
+            uuid: 236bb0de-59ae-4827-9265-00049506b1b6
             region: content
             configuration:
               id: 'field_block:user:user:field_number_identification'
@@ -91,8 +94,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          d6a7453f-1e45-4603-9586-1187b040dc03:
-            uuid: d6a7453f-1e45-4603-9586-1187b040dc03
+          f950badb-711d-440a-af5b-71775535c483:
+            uuid: f950badb-711d-440a-af5b-71775535c483
             region: content
             configuration:
               id: 'field_block:user:user:field_gender'
@@ -106,8 +109,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
-          a283e4cf-6319-422c-bcb9-9905717e9cf1:
-            uuid: a283e4cf-6319-422c-bcb9-9905717e9cf1
+          210a4740-aba8-43ca-9434-6f23919162b0:
+            uuid: 210a4740-aba8-43ca-9434-6f23919162b0
             region: content
             configuration:
               id: 'field_block:user:user:field_date_birthday'
@@ -123,8 +126,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 5
             additional: {  }
-          514c796a-5cbb-4416-81ea-8d96c4696030:
-            uuid: 514c796a-5cbb-4416-81ea-8d96c4696030
+          6fc84165-c980-4af0-a900-736372393e74:
+            uuid: 6fc84165-c980-4af0-a900-736372393e74
             region: content
             configuration:
               id: 'field_block:user:user:field_location'
@@ -138,8 +141,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          cf06dce2-78f2-4a80-8912-46e782ecfc3b:
-            uuid: cf06dce2-78f2-4a80-8912-46e782ecfc3b
+          1ce2d96d-50ac-4492-bdea-b0379ffb5780:
+            uuid: 1ce2d96d-50ac-4492-bdea-b0379ffb5780
             region: content
             configuration:
               id: 'field_block:user:user:field_phone'
@@ -153,8 +156,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 7
             additional: {  }
-          05e215d3-22f1-4adf-b1c9-4fe60ec37d4a:
-            uuid: 05e215d3-22f1-4adf-b1c9-4fe60ec37d4a
+          6de1a613-a117-4bbd-9dd9-11c4c59b8f27:
+            uuid: 6de1a613-a117-4bbd-9dd9-11c4c59b8f27
             region: content
             configuration:
               id: 'field_block:user:user:field_profession'
@@ -169,8 +172,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 8
             additional: {  }
-          520124ae-5e6a-4267-a214-c0babfbec26a:
-            uuid: 520124ae-5e6a-4267-a214-c0babfbec26a
+          bfc116c3-0a76-423f-9e76-8201abf6e8dd:
+            uuid: bfc116c3-0a76-423f-9e76-8201abf6e8dd
             region: content
             configuration:
               id: 'field_block:user:user:field_working'
@@ -186,12 +189,32 @@ third_party_settings:
             weight: 9
             additional: {  }
         third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: Modulos
+          context_mapping: {  }
+        components:
+          575de902-a0dc-4a16-a537-57d813648d28:
+            uuid: 575de902-a0dc-4a16-a537-57d813648d28
+            region: first
+            configuration:
+              id: 'views_block:imc-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
-id: user.user.default
+id: user.user.full
 targetEntityType: user
 bundle: user
-mode: default
+mode: full
 content:
   field_date_birthday:
     type: datetime_default

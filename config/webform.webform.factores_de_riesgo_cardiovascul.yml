@@ -1,60 +1,107 @@
-uuid: bc58b385-6148-480b-8ee9-7a4b33d8d746
+uuid: 4f2889cc-71b4-4b54-b23f-f67961bf2a7f
 langcode: es
-status: closed
-dependencies:
-  enforced:
-    module:
-      - webform_templates
-_core:
-  default_config_hash: oUsW-wVGY_QqapUJXuW_HdPOGOxpdp0XQk9dwPD0CQw
+status: open
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
-template: true
+uid: 1
+template: false
 archive: false
-id: template_registration
-title: Registro
-description: 'A registration webform template.'
-category: ''
-elements: |
-  personal_information:
-    '#title': 'Your Personal Information'
-    '#type': webform_section
-    first_name:
-      '#title': 'First Name'
-      '#type': textfield
-      '#required': true
-    last_name:
-      '#title': 'Last Name'
-      '#type': textfield
-      '#required': true
-  contact_information:
-    '#title': 'Your Contact Information'
-    '#type': webform_section
-    contact:
-      '#type': webform_contact
-      '#title': Contact
-      '#title_display': invisible
-      '#name__access': false
-      '#company__access': false
-  mailinglist:
-    '#title': 'Mailing List'
-    '#type': webform_section
-    subscribe:
-      '#title': 'Please subscribe me to your mailing list.'
-      '#type': checkbox
-  additional_information:
-    '#title': 'Additional Information'
-    '#type': webform_section
-    '#open': true
-    notes:
-      '#title': Comments
-      '#type': textarea
+id: factores_de_riesgo_cardiovascul
+title: 'Factores de Riesgo Cardiovascular'
+description: ''
+category: Salud
+elements: |-
+  nota:
+    '#type': label
+    '#title': 'Si marca dos o mas de estas preguntas consulte con su medico o un profesional de la salud calificado las recomendaciones necesarias para iniciar su programa de ejercicio '
+  _es_hombre_mayor_de_45_anos_:
+    '#type': radios
+    '#title': '¿Es hombre mayor de 45 años?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _es_mujer_mayor_de_55_anos_:
+    '#type': radios
+    '#title': '¿Es mujer mayor de 55 años?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _le_han_practicado_una_histerectomia_:
+    '#type': radios
+    '#title': '¿Le han practicado una histerectomia?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+    '#states':
+      visible:
+        ':input[name="_es_mujer_mayor_de_55_anos_"]':
+          value: 'Yes'
+  _tiene_la_menopausia_:
+    '#type': radios
+    '#title': '¿Tiene la menopausia?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+    '#states':
+      visible:
+        ':input[name="_es_mujer_mayor_de_55_anos_"]':
+          value: 'Yes'
+  _fuma_usted_o_dejo_de_fumar_hace_menos_de_6_meses_:
+    '#type': radios
+    '#title': '¿Fuma usted o dejo de fumar hace menos de 6 meses?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _sufre_usted_de_hipertension_:
+    '#type': radios
+    '#title': '¿Sufre usted de hipertensión?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _conoce_sus_cifras_de_presion_arterial_:
+    '#type': radios
+    '#title': '¿Conoce sus cifras de presión arterial?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _conoce_usted_el_valor_de_su_colesterol_:
+    '#type': radios
+    '#title': '¿Conoce usted el valor de su colesterol?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _sabe_si_su_colesterol_es_mayor_a_200_mg_dl_:
+    '#type': radios
+    '#title': '¿Sabe si su colesterol es mayor a 200 mg/dl?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _tiene_usted_un_pariente_cercano_que_haya_sufrido_un_ataque_card:
+    '#type': radios
+    '#title': '¿Tiene usted un pariente cercano que haya sufrido un ataque cardiaco o una cirugia cardiaca antes de los 55 años o antes de los 65 madre o hermana?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _es_usted_fisicamente_inactivo_no_realiza_al_menos_30_minutos_de:
+    '#type': radios
+    '#title': '¿Es usted fisicamente inactivo (no realiza al menos  30 minutos de actividad fisica mas de dos veces a la semana?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
+  _sabe_si_su_peso_actual_esta_8_kilos_o_mas_por_encima_de_su_peso:
+    '#type': radios
+    '#title': '¿Sabe si su peso actual esta 8 kilos o mas por encima de su peso adecuado?'
+    '#options': yes_no
+    '#options_display': two_columns
+    '#options_description_display': help
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
-    '#submit__label': Register
+    '#submit__label': Enviar
+    '#access_view_roles':
+      - authenticated
 css: ''
 javascript: ''
 settings:
@@ -67,7 +114,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''
@@ -160,7 +207,7 @@ settings:
   confirmation_type: page
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: 'Thank you for registering.'
+  confirmation_message: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -236,42 +283,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  email_notification:
-    id: email
-    handler_id: email_notification
-    label: 'Email Notification'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: _default
-      body: _default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
+handlers: {  }
 variants: {  }

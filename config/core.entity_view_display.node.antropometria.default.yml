@@ -1,0 +1,66 @@
+uuid: 5bad826a-5e5a-40d6-8e04-203ab504d37a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.antropometria.field_altura
+    - field.field.node.antropometria.field_detalle_imc
+    - field.field.node.antropometria.field_indice_de_masa_corporal_
+    - field.field.node.antropometria.field_peso
+    - field.field.node.antropometria.field_relacion_cintura_cadera
+    - node.type.antropometria
+  module:
+    - user
+id: node.antropometria.default
+targetEntityType: node
+bundle: antropometria
+mode: default
+content:
+  field_altura:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_detalle_imc:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_indice_de_masa_corporal_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_peso:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_relacion_cintura_cadera:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

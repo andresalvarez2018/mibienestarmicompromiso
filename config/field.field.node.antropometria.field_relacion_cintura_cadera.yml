@@ -1,0 +1,19 @@
+uuid: caed593d-f7cc-4b0a-ab75-e7a727935ed1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relacion_cintura_cadera
+    - node.type.antropometria
+id: node.antropometria.field_relacion_cintura_cadera
+field_name: field_relacion_cintura_cadera
+entity_type: node
+bundle: antropometria
+label: 'Relación cintura cadera'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
