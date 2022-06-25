@@ -5,11 +5,9 @@
  */
 namespace Drupal\mbmc_antropometria\Form;
 
-use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\node\Entity\Node;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class ImcForm extends FormBase
 {
@@ -31,11 +29,17 @@ class ImcForm extends FormBase
                 'type' => 'antropometria',
                 'uid' => $user_id,
             ]);
-
+        $peso = 0;
+        $altura = 0;
         if ($nodes) {
             foreach ($nodes as $key => $node) {
-                $peso = $node->get('field_peso')->getValue()[0]['value'];
-                $altura = $node->get('field_altura')->getValue()[0]['value'];
+                if ($node->get('field_peso')->getValue()) {
+                    $peso = $node->get('field_peso')->getValue()[0]['value'];
+                }
+
+                if ($node->get('field_altura')->getValue()) {
+                    $altura = $node->get('field_altura')->getValue()[0]['value'];
+                }
             }
 
         }
@@ -63,7 +67,6 @@ class ImcForm extends FormBase
 
     public function submitForm(array &$form, FormStateInterface $form_state)
     {
-        $response = new AjaxResponse();
 
         foreach ($form_state->getValues() as $key => $value) {
             $datos[$key] = $value;
@@ -81,8 +84,12 @@ class ImcForm extends FormBase
                 'uid' => $user_id,
             ]);
 
-        $imc = ($datos['peso'] / ($datos['estatura'] * $datos['estatura'])) * 10000;
-        $imc = round($imc, 1);
+        $imc = 20;
+        if ($datos['peso'] != 0 && $datos['estatura'] != 0) {
+            $imc = ($datos['peso'] / ($datos['estatura'] * $datos['estatura'])) * 10000;
+            $imc = round($imc, 1);
+        }
+
         if ($imc < 18) {
             $detalle_imc = "Por debajo del peso adecuado";
         } elseif ($imc >= 18 && $imc < 24) {
@@ -107,6 +114,9 @@ class ImcForm extends FormBase
 
                 $node->save();
                 \Drupal::messenger()->addStatus(t('data successfully registered.'));
+                sleep(3);
+                header('Location: ../user');
+                exit;
 
             }
 
@@ -115,7 +125,7 @@ class ImcForm extends FormBase
             $node = Node::create(array(
                 'type' => 'antropometria',
                 'title' => 'antropometria de ' . $name,
-                'langcode' => 'en',
+                'langcode' => 'es',
                 'uid' => $user_id,
                 'status' => 1,
                 'field_fields' => array(
@@ -130,11 +140,11 @@ class ImcForm extends FormBase
 
             \Drupal::messenger()->addStatus(t('data successfully registered.'));
 
-        }
+            sleep(3);
+            header('Location: ../user');
+            exit;
 
-        $response = new RedirectResponse('../user/');
-        $response->send();
-        return;
+        }
 
     }
 
