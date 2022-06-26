@@ -84,7 +84,7 @@ class ImcForm extends FormBase
                 'uid' => $user_id,
             ]);
 
-        $imc = 20;
+        $imc = 0;
         if ($datos['peso'] != 0 && $datos['estatura'] != 0) {
             $imc = ($datos['peso'] / ($datos['estatura'] * $datos['estatura'])) * 10000;
             $imc = round($imc, 1);
@@ -103,6 +103,8 @@ class ImcForm extends FormBase
         } else {
             $detalle_imc = "Obesidad mórbida";
         }
+        $datos['detalle_imc'] = $detalle_imc;
+        $datos['imc'] = $imc;
 
         if ($nodes) {
             foreach ($nodes as $key => $node) {
@@ -115,33 +117,25 @@ class ImcForm extends FormBase
                 $node->save();
                 \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
 
-                sleep(5);
-                header('Location: /user/');
+                header('Location: /web/user/' . $user_id);
                 exit;
 
             }
 
         } else {
 
-            $node = Node::create(array(
-                'type' => 'antropometria',
-                'title' => 'antropometria de ' . $name,
-                'uid' => $user_id,
-                'status' => 1,
-                'field_fields' => array(
-                    'field_altura' => $datos['estatura'],
-                    'field_peso' => $datos['peso'],
-                    'field_indice_de_masa_corporal_' => $imc,
-                    'field_detalle_imc' => $detalle_imc,
-                ),
-            ));
-
+            $node = Node::create(['type' => 'antropometria']);
+            $node->title = 'IMC ' . $name;
+            $node->uid = 1;
+            $node->field_altura = $datos['estatura'];
+            $node->field_peso = $datos['peso'];
+            $node->field_indice_de_masa_corporal_ = $datos['imc'];
+            $node->field_detalle_imc = $datos['detalle_imc'];
             $node->save();
 
             \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
 
-            sleep(5);
-            header('Location: /user/');
+            header('Location: /web/user/' . $user_id);
             exit;
 
         }

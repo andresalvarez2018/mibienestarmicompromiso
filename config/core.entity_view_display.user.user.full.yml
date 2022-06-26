@@ -20,7 +20,6 @@ dependencies:
     - datetime
     - image
     - layout_builder
-    - layout_discovery
     - options
     - phone_international
     - user
@@ -31,13 +30,15 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: ''
+          label: 'Cuenta Usuario'
+          context_mapping: {  }
+          column_widths: 33-67
         components:
           71aa0fa6-bd38-4a9e-ba20-575d0753d218:
             uuid: 71aa0fa6-bd38-4a9e-ba20-575d0753d218
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:user_picture'
               label_display: '0'
@@ -50,21 +51,11 @@ third_party_settings:
                   image_link: content
                   image_style: thumbnail
                 third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          17978672-8bd1-4d48-8f3a-745f659028da:
-            uuid: 17978672-8bd1-4d48-8f3a-745f659028da
-            region: content
-            configuration:
-              id: 'extra_field_block:user:user:member_for'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
             weight: 1
             additional: {  }
           46fe4478-8f34-48a4-967a-60284ce64c74:
             uuid: 46fe4478-8f34-48a4-967a-60284ce64c74
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_full_name'
               label_display: '0'
@@ -78,25 +69,9 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          236bb0de-59ae-4827-9265-00049506b1b6:
-            uuid: 236bb0de-59ae-4827-9265-00049506b1b6
-            region: content
-            configuration:
-              id: 'field_block:user:user:field_number_identification'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
           f950badb-711d-440a-af5b-71775535c483:
             uuid: f950badb-711d-440a-af5b-71775535c483
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_gender'
               label_display: '0'
@@ -107,11 +82,11 @@ third_party_settings:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-            weight: 4
+            weight: 3
             additional: {  }
           210a4740-aba8-43ca-9434-6f23919162b0:
             uuid: 210a4740-aba8-43ca-9434-6f23919162b0
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_date_birthday'
               label_display: '0'
@@ -128,7 +103,7 @@ third_party_settings:
             additional: {  }
           6fc84165-c980-4af0-a900-736372393e74:
             uuid: 6fc84165-c980-4af0-a900-736372393e74
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_location'
               label_display: '0'
@@ -139,11 +114,11 @@ third_party_settings:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-            weight: 6
+            weight: 4
             additional: {  }
           1ce2d96d-50ac-4492-bdea-b0379ffb5780:
             uuid: 1ce2d96d-50ac-4492-bdea-b0379ffb5780
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_phone'
               label_display: '0'
@@ -154,27 +129,11 @@ third_party_settings:
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-            weight: 7
-            additional: {  }
-          6de1a613-a117-4bbd-9dd9-11c4c59b8f27:
-            uuid: 6de1a613-a117-4bbd-9dd9-11c4c59b8f27
-            region: content
-            configuration:
-              id: 'field_block:user:user:field_profession'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
             weight: 8
             additional: {  }
           bfc116c3-0a76-423f-9e76-8201abf6e8dd:
             uuid: bfc116c3-0a76-423f-9e76-8201abf6e8dd
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:field_working'
               label_display: '0'
@@ -186,18 +145,27 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 9
+            weight: 7
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_fourcol_section
-        layout_settings:
-          label: Modulos
-          context_mapping: {  }
-        components:
-          575de902-a0dc-4a16-a537-57d813648d28:
-            uuid: 575de902-a0dc-4a16-a537-57d813648d28
+          6de1a613-a117-4bbd-9dd9-11c4c59b8f27:
+            uuid: 6de1a613-a117-4bbd-9dd9-11c4c59b8f27
             region: first
+            configuration:
+              id: 'field_block:user:user:field_profession'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          bd6cd3c3-dad6-4a23-876e-02a08f50c84a:
+            uuid: bd6cd3c3-dad6-4a23-876e-02a08f50c84a
+            region: second
             configuration:
               id: 'views_block:imc-block_1'
               label: ''
