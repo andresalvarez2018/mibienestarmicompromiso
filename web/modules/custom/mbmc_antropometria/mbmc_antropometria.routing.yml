@@ -5,3 +5,11 @@ mbmbc_antropometria.imc:
     _title: 'Formulario Indice Corporal'
   requirements:
     _permission: 'access content'
+
+mbmbc_antropometria.rlc:
+  path: '/form/rlc'
+  defaults:
+    _form: '\Drupal\mbmc_antropometria\Form\RlcForm'
+    _title: 'Formulario Indice Corporal'
+  requirements:
+    _permission: 'access content'

@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.antropometria.field_altura
+    - field.field.node.antropometria.field_cadera
+    - field.field.node.antropometria.field_cintura
     - field.field.node.antropometria.field_detalle_imc
+    - field.field.node.antropometria.field_detalle_rlc
     - field.field.node.antropometria.field_indice_de_masa_corporal_
     - field.field.node.antropometria.field_peso
     - field.field.node.antropometria.field_relacion_cintura_cadera
@@ -24,6 +27,22 @@ content:
     third_party_settings: {  }
     weight: 104
     region: content
+  field_cadera:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_cintura:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_detalle_imc:
     type: string
     label: above
@@ -31,6 +50,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_detalle_rlc:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_indice_de_masa_corporal_:
     type: string

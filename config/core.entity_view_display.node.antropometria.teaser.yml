@@ -5,7 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.antropometria.field_altura
+    - field.field.node.antropometria.field_cadera
+    - field.field.node.antropometria.field_cintura
     - field.field.node.antropometria.field_detalle_imc
+    - field.field.node.antropometria.field_detalle_rlc
     - field.field.node.antropometria.field_indice_de_masa_corporal_
     - field.field.node.antropometria.field_peso
     - field.field.node.antropometria.field_relacion_cintura_cadera
@@ -25,7 +28,10 @@ content:
 hidden:
   addtoany: true
   field_altura: true
+  field_cadera: true
+  field_cintura: true
   field_detalle_imc: true
+  field_detalle_rlc: true
   field_indice_de_masa_corporal_: true
   field_peso: true
   field_relacion_cintura_cadera: true

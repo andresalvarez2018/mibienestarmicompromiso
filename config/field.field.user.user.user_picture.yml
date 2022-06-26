@@ -5,8 +5,15 @@ dependencies:
   config:
     - field.storage.user.user_picture
   module:
+    - content_translation
     - image
     - user
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 _core:
   default_config_hash: twhm-ZOwSVkUjuLI_pQsaPo_pVLcqFfDmY-ojfqw0yk
 id: user.user.user_picture
@@ -15,7 +22,7 @@ entity_type: user
 bundle: user
 label: Imagen
 description: 'Su cara o foto virtual.'
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -32,7 +39,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null

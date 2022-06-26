@@ -108,14 +108,14 @@ class ImcForm extends FormBase
 
         if ($nodes) {
             foreach ($nodes as $key => $node) {
-                $node->set('title', 'antropometria de ' . $name);
+                $node->set('title', 'Antropometria de ' . $name);
                 $node->set('field_altura', $datos['estatura']);
                 $node->set('field_peso', $datos['peso']);
                 $node->set('field_indice_de_masa_corporal_', $imc);
                 $node->set('field_detalle_imc', $detalle_imc);
 
                 $node->save();
-                \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
+                \Drupal::messenger()->addStatus(t('Datos registrados exitosamente.'));
 
                 header('Location: /web/user/' . $user_id);
                 exit;
@@ -125,7 +125,7 @@ class ImcForm extends FormBase
         } else {
 
             $node = Node::create(['type' => 'antropometria']);
-            $node->title = 'IMC ' . $name;
+            $node->title = 'Antropometria de' . $name;
             $node->uid = 1;
             $node->field_altura = $datos['estatura'];
             $node->field_peso = $datos['peso'];
@@ -133,7 +133,7 @@ class ImcForm extends FormBase
             $node->field_detalle_imc = $datos['detalle_imc'];
             $node->save();
 
-            \Drupal::messenger()->addStatus(t('datos registrados exitosamente.'));
+            \Drupal::messenger()->addStatus(t('Datos registrados exitosamente.'));
 
             header('Location: /web/user/' . $user_id);
             exit;
