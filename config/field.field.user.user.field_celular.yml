@@ -1,0 +1,21 @@
+uuid: 96e9d879-db21-416e-8b3f-a28cb484d89d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_celular
+  module:
+    - phone_international
+    - user
+id: user.user.field_celular
+field_name: field_celular
+entity_type: user
+bundle: user
+label: Celular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: phone_international

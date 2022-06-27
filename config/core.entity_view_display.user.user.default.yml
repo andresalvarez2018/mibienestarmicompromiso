@@ -3,12 +3,12 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_celular
     - field.field.user.user.field_date_birthday
     - field.field.user.user.field_full_name
     - field.field.user.user.field_gender
     - field.field.user.user.field_location
     - field.field.user.user.field_number_identification
-    - field.field.user.user.field_phone
     - field.field.user.user.field_profession
     - field.field.user.user.field_working
     - field.field.user.user.user_picture
@@ -138,21 +138,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 6
             additional: {  }
-          cf06dce2-78f2-4a80-8912-46e782ecfc3b:
-            uuid: cf06dce2-78f2-4a80-8912-46e782ecfc3b
-            region: content
-            configuration:
-              id: 'field_block:user:user:field_phone'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: phone_international_formatter
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 7
-            additional: {  }
           05e215d3-22f1-4adf-b1c9-4fe60ec37d4a:
             uuid: 05e215d3-22f1-4adf-b1c9-4fe60ec37d4a
             region: content
@@ -185,6 +170,21 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 9
             additional: {  }
+          7ca02fac-dfc4-435b-96d4-2eb3294718a6:
+            uuid: 7ca02fac-dfc4-435b-96d4-2eb3294718a6
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_celular'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: phone_international_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
@@ -193,6 +193,13 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_celular:
+    type: phone_international_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
   field_date_birthday:
     type: datetime_default
     label: above
@@ -231,13 +238,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
-    region: content
-  field_phone:
-    type: phone_international_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 11
     region: content
   field_profession:
     type: string

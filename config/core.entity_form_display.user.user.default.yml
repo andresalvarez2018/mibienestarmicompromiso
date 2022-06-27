@@ -3,12 +3,12 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_celular
     - field.field.user.user.field_date_birthday
     - field.field.user.user.field_full_name
     - field.field.user.user.field_gender
     - field.field.user.user.field_location
     - field.field.user.user.field_number_identification
-    - field.field.user.user.field_phone
     - field.field.user.user.field_profession
     - field.field.user.user.field_working
     - field.field.user.user.user_picture
@@ -30,9 +30,25 @@ content:
   account:
     weight: -10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_celular:
+    type: phone_international_widget
+    weight: 39
+    region: content
+    settings:
+      geolocation: true
+      initial_country: PT
+      exclude_countries: {  }
+      preferred_countries:
+        - CO
+      countries: all
+    third_party_settings: {  }
   field_date_birthday:
     type: datetime_default
     weight: 34
@@ -67,18 +83,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_phone:
-    type: phone_international_widget
-    weight: 36
-    region: content
-    settings:
-      geolocation: false
-      initial_country: PT
-      exclude_countries: {  }
-      preferred_countries:
-        - PT
-      countries: exclude
-    third_party_settings: {  }
   field_profession:
     type: string_textfield
     weight: 37
@@ -98,6 +102,8 @@ content:
   language:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -107,6 +113,8 @@ content:
   timezone:
     weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     weight: -1
