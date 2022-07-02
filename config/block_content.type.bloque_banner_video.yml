@@ -1,0 +1,10 @@
+uuid: c4cda83a-666a-4562-9e56-5fb929086698
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EAZzCf9V8hFJLIR2hZJu1SZXOSsd4aBPIBWQ3Er26JU
+id: bloque_banner_video
+label: 'Bloque banner video'
+revision: 0
+description: 'Bloque full size para adjuntar con video'

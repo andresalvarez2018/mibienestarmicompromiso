@@ -1,0 +1,8 @@
+uuid: c4cda83a-666a-4562-9e56-5fb929086698
+langcode: es
+status: true
+dependencies: {  }
+id: bloque_banner_video
+label: 'Bloque banner video'
+revision: 0
+description: 'Bloque full size para adjuntar con video'

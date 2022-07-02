@@ -1,0 +1,23 @@
+uuid: 53f8a56f-db2c-4a7c-8b12-8c5ada08e206
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_banner_video
+    - field.field.block_content.bloque_banner_video.field_video
+id: block_content.bloque_banner_video.default
+targetEntityType: block_content
+bundle: bloque_banner_video
+mode: default
+content:
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

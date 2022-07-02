@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains mbmc_banner_video.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mbmc_banner_video_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the mbmc_banner_video module.
+        case 'help.page.mbmc_banner_video':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Core Components Lib v2') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mbmc_banner_video_theme()
+{
+    return [
+        'mbmc_banner_video' => [
+            'render element' => 'children',
+        ],
+    ];
+}

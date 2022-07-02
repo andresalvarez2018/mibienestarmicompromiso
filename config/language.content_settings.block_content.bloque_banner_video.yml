@@ -1,0 +1,13 @@
+uuid: fe8c540e-281a-4e34-8d8c-e10e7d36a1d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_banner_video
+_core:
+  default_config_hash: Gh-mFg6cn2V8uU541V6WV7U5HJ-TNvzs7cKCEho-cqA
+id: block_content.bloque_banner_video
+target_entity_type_id: block_content
+target_bundle: bloque_banner_video
+default_langcode: site_default
+language_alterable: false

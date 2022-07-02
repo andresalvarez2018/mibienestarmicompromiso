@@ -1,0 +1,5 @@
+name: 'MBMC Banner video'
+type: module
+description: 'Components MBMC'
+core_version_requirement: ^8 || ^9
+package: 'MBMC'

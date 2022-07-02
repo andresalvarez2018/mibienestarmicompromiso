@@ -51,6 +51,7 @@ module:
   login_destination: 0
   mbmc: 0
   mbmc_antropometria: 0
+  mbmc_banner_video: 0
   mbmc_card: 0
   mbmc_carrousel: 0
   media: 0

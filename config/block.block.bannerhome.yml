@@ -1,0 +1,30 @@
+uuid: 2f9a15d9-8b47-44b5-acbd-312031418a08
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_banner_video:d914e7aa-6831-4737-a3cf-108f3581dbd1'
+  module:
+    - block_content
+    - system
+  theme:
+    - showcase_lite
+id: bannerhome
+theme: showcase_lite
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:d914e7aa-6831-4737-a3cf-108f3581dbd1'
+settings:
+  id: 'block_content:d914e7aa-6831-4737-a3cf-108f3581dbd1'
+  label: 'banner home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
