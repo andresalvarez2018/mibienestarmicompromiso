@@ -1,0 +1,23 @@
+uuid: 5dc9d623-2a02-4e77-92a2-c8dc15c66013
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caloric_expenditure
+    - node.type.physical_activities
+id: node.physical_activities.field_caloric_expenditure
+field_name: field_caloric_expenditure
+entity_type: node
+bundle: physical_activities
+label: 'Gasto calórico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Calorías
+field_type: decimal

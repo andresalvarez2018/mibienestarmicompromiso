@@ -1,0 +1,19 @@
+uuid: f12c8664-97da-47af-a56c-4391dfa089b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_activity_site
+    - taxonomy.vocabulary.activity_site
+id: taxonomy_term.activity_site.field_activity_site
+field_name: field_activity_site
+entity_type: taxonomy_term
+bundle: activity_site
+label: 'Sitio de actividad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

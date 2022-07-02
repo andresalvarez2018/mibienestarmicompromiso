@@ -1,0 +1,29 @@
+uuid: e231d635-17a4-4e70-b2e3-929973f0acd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_site
+    - node.type.physical_activities
+    - taxonomy.vocabulary.activity_site
+id: node.physical_activities.field_activity_site
+field_name: field_activity_site
+entity_type: node
+bundle: physical_activities
+label: 'Sitio de actividad'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity_site: activity_site
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

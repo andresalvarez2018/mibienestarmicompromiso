@@ -1,0 +1,11 @@
+uuid: 2aafaa9a-89c9-41bd-b169-f23a4e10c01c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.physical_activities
+id: node.physical_activities
+target_entity_type_id: node
+target_bundle: physical_activities
+default_langcode: site_default
+language_alterable: false

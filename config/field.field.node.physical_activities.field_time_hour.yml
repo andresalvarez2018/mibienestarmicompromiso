@@ -1,0 +1,25 @@
+uuid: e7bdfae4-5a86-4d5a-b38a-6930749cc78a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_hour
+    - node.type.physical_activities
+id: node.physical_activities.field_time_hour
+field_name: field_time_hour
+entity_type: node
+bundle: physical_activities
+label: 'Tiempo en horas'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Hora/s
+field_type: integer

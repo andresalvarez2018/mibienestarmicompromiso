@@ -1,0 +1,28 @@
+uuid: 0aa4ffad-6d0e-4656-9668-df67a8b8d1a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.physical_activities.field_activity_site
+    - field.field.node.physical_activities.field_caloric_expenditure
+    - field.field.node.physical_activities.field_time_hour
+    - node.type.physical_activities
+  module:
+    - user
+id: node.physical_activities.teaser
+targetEntityType: node
+bundle: physical_activities
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_activity_site: true
+  field_caloric_expenditure: true
+  field_time_hour: true
+  langcode: true

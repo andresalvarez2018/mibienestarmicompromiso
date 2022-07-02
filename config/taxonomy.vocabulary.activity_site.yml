@@ -1,0 +1,8 @@
+uuid: 26b5ad64-ac4c-4d85-a437-8077c2c4d176
+langcode: es
+status: true
+dependencies: {  }
+name: 'Sitio de actividad'
+vid: activity_site
+description: ''
+weight: 0
