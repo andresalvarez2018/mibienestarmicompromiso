@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for media_entity_lottie module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\media_library\Form\FileUploadForm;
+
+/**
+ * Implements hook_help().
+ */
+function media_entity_lottie_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.media_entity_lottie':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module provides Lottie integration for Media entity (i.e. media type provider plugin)') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function media_entity_lottie_theme() {
+  return [
+    'file_lottie_player' => [
+      'variables' => [
+        'attributes' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_media_source_info_alter().
+ */
+function media_entity_lottie_media_source_info_alter(array &$sources) {
+  if (empty($sources['lottie_file']['forms']['media_library_add'])) {
+    $sources['lottie_file']['forms']['media_library_add'] = FileUploadForm::class;
+  }
+}

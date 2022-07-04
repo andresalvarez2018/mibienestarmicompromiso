@@ -1,0 +1,13 @@
+name: Media entity Lottie
+description: 'Media Entity Lottie provider.'
+package: Media
+
+type: module
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - drupal:media
+
+# Information added by Drupal.org packaging script on 2022-03-04
+version: '2.0.0'
+project: 'media_entity_lottie'
+datestamp: 1646399744

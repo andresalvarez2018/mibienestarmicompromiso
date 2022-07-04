@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c5f4937b3d5f3d561b0f119842ae38507b96f3a0',
+        'reference' => '483152d8ea65683d5b112ef50f6bfc6108f74ef2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -853,6 +853,15 @@
                 0 => '9.3.16',
             ),
         ),
+        'drupal/media_entity_lottie' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/media_entity_lottie',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/media_library' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -997,7 +1006,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'c5f4937b3d5f3d561b0f119842ae38507b96f3a0',
+            'reference' => '483152d8ea65683d5b112ef50f6bfc6108f74ef2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

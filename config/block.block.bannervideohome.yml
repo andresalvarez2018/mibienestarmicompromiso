@@ -1,0 +1,25 @@
+uuid: c052d87a-049e-4a0c-84fb-af904b844d8f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_banner_video:108018de-8f68-4e7d-95be-06635b4332ef'
+  module:
+    - block_content
+  theme:
+    - showcase_lite
+id: bannervideohome
+theme: showcase_lite
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:108018de-8f68-4e7d-95be-06635b4332ef'
+settings:
+  id: 'block_content:108018de-8f68-4e7d-95be-06635b4332ef'
+  label: 'Banner video home'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

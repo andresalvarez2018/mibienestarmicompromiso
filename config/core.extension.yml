@@ -55,6 +55,7 @@ module:
   mbmc_card: 0
   mbmc_carrousel: 0
   media: 0
+  media_entity_lottie: 0
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
