@@ -14,13 +14,13 @@
           excludeCountries: exclude ? exclude.split("-") : [],
           onlyCountries: only ? only.split("-") : [],
           geoIpLookup: callback => {
-            fetch(new Request("//www.geoplugin.net/json.gp"))
+            fetch(new Request("//ipinfo.io/json"))
               .then(response => {
                 if (response.status === 200) {
                   return response.json();
                 }
               }).then(resp => {
-                const countryCode = (resp && resp.geoplugin_countryCode) ? resp.geoplugin_countryCode : country;
+                const countryCode = (resp && resp.country) ? resp.country : country;
                 callback(countryCode);
               }).catch(error => {
                 console.error(error);
