@@ -3,5 +3,4 @@ _core:
 langcode: es
 ignored_config_entities:
   - system.site
-  - block.block.carrusel
-  - block.block.bannervideohome
+  - 'block.block.*'
