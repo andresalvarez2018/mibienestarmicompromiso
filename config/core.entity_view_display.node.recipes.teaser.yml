@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.recipes.body
+    - field.field.node.recipes.field_calories
     - field.field.node.recipes.field_ingredients
     - field.field.node.recipes.field_photo_recipe
     - field.field.node.recipes.field_rations
@@ -33,6 +34,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_calories: true
   field_ingredients: true
   field_photo_recipe: true
   field_rations: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.recipes.body
+    - field.field.node.recipes.field_calories
     - field.field.node.recipes.field_ingredients
     - field.field.node.recipes.field_photo_recipe
     - field.field.node.recipes.field_rations
@@ -33,6 +34,13 @@ content:
     weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_calories:
+    type: number
+    weight: 26
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_ingredients:
     type: entity_reference_autocomplete_tags

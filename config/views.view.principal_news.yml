@@ -399,21 +399,18 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        nid:
-          id: nid
+        promote:
+          id: promote
           table: node_field_data
-          field: nid
+          field: promote
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: nid
-          plugin_id: numeric
+          entity_field: promote
+          plugin_id: boolean
           operator: '='
-          value:
-            min: ''
-            max: ''
-            value: '246'
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -430,9 +427,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -447,6 +441,10 @@ display:
             group_items: {  }
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       query:

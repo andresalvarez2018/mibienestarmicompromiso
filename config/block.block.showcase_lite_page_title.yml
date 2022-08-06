@@ -27,3 +27,4 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       article: article
+      recipes: recipes

@@ -1,0 +1,23 @@
+uuid: 15e596bf-8a62-4f54-b160-3dfb97a6475c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_calories
+    - node.type.recipes
+id: node.recipes.field_calories
+field_name: field_calories
+entity_type: node
+bundle: recipes
+label: Calorias
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Calórias
+field_type: integer
