@@ -1,0 +1,34 @@
+uuid: ab4025de-e7b9-4e18-92ce-8239fd1203d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video_media.field_media_video_file
+    - field.field.media.video_media.field_source
+    - image.style.medium
+    - media.type.video_media
+  module:
+    - image
+id: media.video_media.media_library
+targetEntityType: media
+bundle: video_media
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_media_video_file: true
+  field_source: true
+  langcode: true
+  name: true
+  uid: true

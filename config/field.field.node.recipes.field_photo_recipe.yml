@@ -1,0 +1,29 @@
+uuid: 0cfbbd82-d93f-43d4-a7cf-27c57ebb6f1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_recipe
+    - media.type.image
+    - node.type.recipes
+id: node.recipes.field_photo_recipe
+field_name: field_photo_recipe
+entity_type: node
+bundle: recipes
+label: 'Foto de receta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

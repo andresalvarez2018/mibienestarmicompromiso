@@ -1,0 +1,20 @@
+uuid: afaeb6dd-40b7-4003-944e-a866ed2d2eea
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_photo_recipe
+field_name: field_photo_recipe
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -14,7 +14,7 @@ _core:
 id: tools
 theme: showcase_lite
 region: sidebar_second
-weight: -4
+weight: -6
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

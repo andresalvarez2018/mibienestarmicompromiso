@@ -8,8 +8,7 @@ slogan: 'Mi Bienestar Mi Compromiso'
 page:
   403: ''
   404: /search404
-  front: /node/6
+  front: /node/4
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es
-mail_notification: webmaster@mibienestarmicompromiso.com

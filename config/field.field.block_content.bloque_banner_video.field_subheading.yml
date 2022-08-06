@@ -1,0 +1,19 @@
+uuid: efc86e4d-6529-458d-b415-5246a0d2efdb
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_banner_video
+    - field.storage.block_content.field_subheading
+id: block_content.bloque_banner_video.field_subheading
+field_name: field_subheading
+entity_type: block_content
+bundle: bloque_banner_video
+label: Subtitulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

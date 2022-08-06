@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - block_content.type.bloque_banner_video
+    - field.field.block_content.bloque_banner_video.field_heading
+    - field.field.block_content.bloque_banner_video.field_subheading
     - field.field.block_content.bloque_banner_video.field_video
   module:
     - media_library
@@ -14,6 +16,22 @@ targetEntityType: block_content
 bundle: bloque_banner_video
 mode: default
 content:
+  field_heading:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subheading:
+    type: string_textfield
+    weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_video:
     type: media_library_widget
     weight: 26

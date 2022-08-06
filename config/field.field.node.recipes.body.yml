@@ -1,0 +1,23 @@
+uuid: e68f1f61-8057-4c61-9d1e-048162320a12
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recipes
+  module:
+    - text
+id: node.recipes.body
+field_name: body
+entity_type: node
+bundle: recipes
+label: Receta
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

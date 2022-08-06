@@ -1,0 +1,23 @@
+uuid: 13a9d95b-9103-4a23-9d1a-ec3af90d1a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rations
+    - node.type.recipes
+id: node.recipes.field_rations
+field_name: field_rations
+entity_type: node
+bundle: recipes
+label: Raciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10
+  prefix: ''
+  suffix: Ración/es
+field_type: integer

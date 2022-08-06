@@ -1,0 +1,29 @@
+uuid: d38a47d1-af73-420f-b09e-44dc75891835
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredients
+    - node.type.food
+    - node.type.recipes
+id: node.recipes.field_ingredients
+field_name: field_ingredients
+entity_type: node
+bundle: recipes
+label: Ingredientes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      food: food
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

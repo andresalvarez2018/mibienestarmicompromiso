@@ -1,0 +1,19 @@
+uuid: 1c702cc2-6f15-4d32-a71c-a308f6d6d6f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.article
+id: node.article.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: article
+label: Subtitulo
+description: 'Fuente de url del video'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

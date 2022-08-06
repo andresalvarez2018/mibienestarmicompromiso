@@ -8,7 +8,10 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_subheading
     - field.field.node.article.field_tags
+    - field.field.node.article.field_video
+    - field.field.node.article.field_video_url
     - field.field.node.article.field_yoast_seo
     - image.style.medium
     - node.type.article
@@ -60,6 +63,9 @@ hidden:
   comment: true
   field_image: true
   field_meta_tags: true
+  field_subheading: true
   field_tags: true
+  field_video: true
+  field_video_url: true
   field_yoast_seo: true
   langcode: true

@@ -1,0 +1,27 @@
+uuid: 74ec16dd-2189-42fa-ac6f-dea73cf1fff3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_file
+    - media.type.video_media
+  module:
+    - file
+id: media.video_media.field_media_video_file
+field_name: field_media_video_file
+entity_type: media
+bundle: video_media
+label: 'Video file'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: ''
+  description_field: false
+field_type: file

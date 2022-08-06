@@ -1,0 +1,29 @@
+uuid: b5ac8405-a2f9-4870-8c7f-50ab9e292173
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_url
+    - media.type.remote_video
+    - node.type.article
+id: node.article.field_video_url
+field_name: field_video_url
+entity_type: node
+bundle: article
+label: 'Video url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

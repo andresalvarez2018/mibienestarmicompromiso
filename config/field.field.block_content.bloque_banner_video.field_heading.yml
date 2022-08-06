@@ -1,0 +1,19 @@
+uuid: afa3ce4a-8e9d-4715-bf03-1755f9acb546
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_banner_video
+    - field.storage.block_content.field_heading
+id: block_content.bloque_banner_video.field_heading
+field_name: field_heading
+entity_type: block_content
+bundle: bloque_banner_video
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

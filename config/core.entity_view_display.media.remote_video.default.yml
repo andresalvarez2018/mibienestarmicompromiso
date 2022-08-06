@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_source_url
     - media.type.remote_video
   module:
     - media
@@ -22,6 +23,14 @@ content:
       max_height: 0
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_source_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   addtoany: true

@@ -1,0 +1,19 @@
+uuid: 6463ecc9-ccd3-4388-8bcc-4948e46d9ab5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_source
+    - media.type.video_media
+id: media.video_media.field_source
+field_name: field_source
+entity_type: media
+bundle: video_media
+label: Fuente
+description: 'Fuente del video'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
