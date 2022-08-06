@@ -50,8 +50,17 @@
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
-    
-      {{(content) }}
+      <div class="block-video-banner-main__card">
+        <div class="block-video-banner-main__content">
+              <div class="block-video-banner-main__text-wrap">
+                  <h3 class="block-video-banner-main__subtitle">{{(content.field_subheading) }}</h3>
+                  <h4 class="block-video-banner-main__title">{{(content.field_heading) }}</h4>
+              </div>
+          </div>
+          <div class="block-video-banner-main__video">  
+            {{(content.field_video) }}
+          </div>
+      </div>
     </div>
   {% endblock %}
 </div>

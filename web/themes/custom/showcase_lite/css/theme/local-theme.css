@@ -1,0 +1,7 @@
+.block-video-banner-main__content{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 50%;
+}
