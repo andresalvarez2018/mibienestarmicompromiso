@@ -1,0 +1,10 @@
+uuid: d3efa278-c99a-4a12-8dc6-8899de949e84
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.imagen_alimento
+label: 'Imagen alimento'
+targetEntityType: taxonomy_term
+cache: true

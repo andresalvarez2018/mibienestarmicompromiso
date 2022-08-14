@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.physical_activities.field_activity_site
     - field.field.node.physical_activities.field_caloric_expenditure
+    - field.field.node.physical_activities.field_image
     - field.field.node.physical_activities.field_time_hour
     - node.type.physical_activities
   module:
+    - image
     - user
 id: node.physical_activities.default
 targetEntityType: node
@@ -32,6 +34,17 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_time_hour:
     type: number_integer

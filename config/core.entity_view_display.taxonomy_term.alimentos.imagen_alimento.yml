@@ -1,0 +1,36 @@
+uuid: d12e6020-0aca-4032-bf19-c3d61680311f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.imagen_alimento
+    - field.field.taxonomy_term.alimentos.field_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.alimentos
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.alimentos.imagen_alimento
+targetEntityType: taxonomy_term
+bundle: alimentos
+mode: imagen_alimento
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  description: true
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 75f1008d-83d8-4466-abaf-f3e6f38d4c2e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.alimentos.field_image
+    - taxonomy.vocabulary.alimentos
+  module:
+    - text
+id: taxonomy_term.alimentos.default
+targetEntityType: taxonomy_term
+bundle: alimentos
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  langcode: true
