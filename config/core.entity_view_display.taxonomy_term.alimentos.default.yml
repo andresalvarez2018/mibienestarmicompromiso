@@ -19,6 +19,15 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
   addtoany: true
   field_image: true

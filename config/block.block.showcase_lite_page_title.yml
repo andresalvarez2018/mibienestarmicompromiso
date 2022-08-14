@@ -11,7 +11,7 @@ _core:
 id: showcase_lite_page_title
 theme: showcase_lite
 region: content
-weight: -7
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
@@ -27,4 +27,3 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       article: article
-      recipes: recipes

@@ -9,7 +9,7 @@ _core:
 id: tabs
 theme: showcase_lite
 region: content
-weight: -5
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

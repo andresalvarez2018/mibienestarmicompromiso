@@ -14,7 +14,7 @@ _core:
 id: useraccountmenu
 theme: showcase_lite
 region: sidebar_second
-weight: -7
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:
