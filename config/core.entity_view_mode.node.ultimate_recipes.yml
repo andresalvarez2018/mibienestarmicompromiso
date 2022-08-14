@@ -1,0 +1,10 @@
+uuid: a44a6881-467a-4d94-b160-22d970051f97
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.ultimate_recipes
+label: 'Ultimas recetas'
+targetEntityType: node
+cache: true

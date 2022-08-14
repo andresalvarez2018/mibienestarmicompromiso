@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'd745f0bfe15714ee88c17bdc658fb5adf764b752',
+        'reference' => '7be50663ee26833a59e833b99ab906277a5295ae',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -847,6 +847,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/manage_display' => array(
+            'pretty_version' => '1.0.0-beta2',
+            'version' => '1.0.0.0-beta2',
+            'reference' => '8.x-1.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/manage_display',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/media' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -1018,7 +1027,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'd745f0bfe15714ee88c17bdc658fb5adf764b752',
+            'reference' => '7be50663ee26833a59e833b99ab906277a5295ae',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

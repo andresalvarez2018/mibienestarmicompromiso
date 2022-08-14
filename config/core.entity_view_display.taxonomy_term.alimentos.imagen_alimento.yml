@@ -34,3 +34,4 @@ hidden:
   addtoany: true
   description: true
   langcode: true
+  name: true

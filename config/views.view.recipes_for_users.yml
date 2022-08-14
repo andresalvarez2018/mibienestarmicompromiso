@@ -9,21 +9,10 @@ dependencies:
     - field.storage.node.field_rations
     - image.style.thumbnail
     - node.type.recipes
-    - taxonomy.vocabulary.alimentos
-  content:
-    - 'taxonomy_term:alimentos:00622200-13ec-42ed-9908-6defdd1e49e7'
-    - 'taxonomy_term:alimentos:179005c3-6445-496c-8fe1-98c277263d7e'
-    - 'taxonomy_term:alimentos:25076376-62d8-46fe-9df1-aec576104a0b'
-    - 'taxonomy_term:alimentos:31af699d-428e-4180-83b8-e6462ead4306'
-    - 'taxonomy_term:alimentos:4e1a6208-c61b-4171-a6eb-7ec8abdf2ac0'
-    - 'taxonomy_term:alimentos:6a3c8e46-82fd-4356-86bd-0035456f324b'
-    - 'taxonomy_term:alimentos:ca01e035-24ae-4dcd-a347-cf6685e3f04f'
-    - 'taxonomy_term:alimentos:d71167e7-d121-4df2-ada3-f839e662ad7b'
   module:
     - file
     - media
     - node
-    - taxonomy
     - user
 id: recipes_for_users
 label: 'Recetas para usuario'
@@ -398,114 +387,7 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
-      arguments:
-        vid:
-          id: vid
-          table: taxonomy_term_field_data
-          field: vid
-          relationship: field_tag
-          group_type: group
-          admin_label: ''
-          entity_type: taxonomy_term
-          entity_field: vid
-          plugin_id: vocabulary_vid
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: fixed
-          default_argument_options:
-            argument: ''
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
-        field_tag_target_id:
-          id: field_tag_target_id
-          table: node__field_tag
-          field: field_tag_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: fixed
-          default_argument_options:
-            argument: ''
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
-        field_tag_target_id_1:
-          id: field_tag_target_id_1
-          table: node__field_tag
-          field: field_tag_target_id
-          relationship: reverse__node__field_tag
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          default_action: ignore
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: fixed
-          default_argument_options:
-            argument: ''
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
+      arguments: {  }
       filters:
         status:
           id: status
@@ -532,75 +414,59 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_tag_target_id:
-          id: field_tag_target_id
-          table: node__field_tag
-          field: field_tag_target_id
-          relationship: reverse__node__field_tag
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            9: 9
-            7: 7
-            4: 4
-            10: 10
-            11: 11
-            8: 8
-            6: 6
-            5: 5
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_tag_target_id_op
-            label: Categoría
-            description: ''
-            use_operator: false
-            operator: field_tag_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_tag_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: true
-          is_grouped: true
-          group_info:
-            label: 'Categoría (field_tag)'
-            description: ''
-            identifier: field_tag_target_id
-            optional: true
-            widget: select
-            multiple: true
-            remember: false
-            default_group: All
-            default_group_multiple:
-              All: 0
-            group_items:
-              1:
-                title: Carne
-                operator: or
-                value:
-                  9: '9'
-              2:
-                title: CEREAL
-                operator: or
-                value:
-                  7: '7'
-          reduce_duplicates: false
-          vid: alimentos
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            field_photo_recipe: field_photo_recipe
+            title: title
+            field_calories: field_calories
+            field_rations: field_rations
+            field_ingredients: field_ingredients
+          default: '-1'
+          info:
+            field_photo_recipe:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_calories:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_rations:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_ingredients:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
       row:
         type: fields
       query:
@@ -611,55 +477,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships:
-        field_tag:
-          id: field_tag
-          table: node__field_tag
-          field: field_tag
-          relationship: none
-          group_type: group
-          admin_label: 'field_tag: Taxonomy term'
-          plugin_id: standard
-          required: false
-        reverse__node__field_ingredients:
-          id: reverse__node__field_ingredients
-          table: node_field_data
-          field: reverse__node__field_ingredients
-          relationship: none
-          group_type: group
-          admin_label: field_ingredients
-          entity_type: node
-          plugin_id: entity_reverse
-          required: false
-        field_tag_1:
-          id: field_tag_1
-          table: node__field_tag
-          field: field_tag
-          relationship: reverse__node__field_ingredients
-          group_type: group
-          admin_label: 'field_tag: Taxonomy term'
-          plugin_id: standard
-          required: false
-        reverse__node__field_tag:
-          id: reverse__node__field_tag
-          table: taxonomy_term_field_data
-          field: reverse__node__field_tag
-          relationship: field_tag
-          group_type: group
-          admin_label: field_tag
-          entity_type: taxonomy_term
-          plugin_id: entity_reverse
-          required: false
-        reverse__node__field_tags:
-          id: reverse__node__field_tags
-          table: taxonomy_term_field_data
-          field: reverse__node__field_tags
-          relationship: field_tag
-          group_type: group
-          admin_label: field_tags
-          entity_type: taxonomy_term
-          plugin_id: entity_reverse
-          required: false
+      relationships: {  }
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -668,9 +486,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -678,6 +494,241 @@ display:
         - 'config:field.storage.node.field_ingredients'
         - 'config:field.storage.node.field_photo_recipe'
         - 'config:field.storage.node.field_rations'
+  block_1:
+    id: block_1
+    display_title: Bloque
+    display_plugin: block
+    position: 1
+    display_options:
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_photo_recipe:
+          id: field_photo_recipe
+          table: node__field_photo_recipe
+          field: field_photo_recipe
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_link: content
+            image_style: thumbnail
+            image_loading:
+              attribute: lazy
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_calories:
+          id: field_calories
+          table: node__field_calories
+          field: field_calories
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: file_size
+          settings:
+            thousand_separator: ''
+            prefix_suffix: 1
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 5
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options: {  }
+      defaults:
+        pager: false
+        style: false
+        row: false
+        fields: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_calories'
+        - 'config:field.storage.node.field_photo_recipe'
   page_1:
     id: page_1
     display_title: Page
@@ -691,9 +742,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

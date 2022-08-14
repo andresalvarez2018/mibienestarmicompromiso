@@ -1,8 +1,9 @@
-uuid: d4a91ef6-ecac-4367-bc2f-07f7e633c171
+uuid: 968bf751-df06-4b32-9825-6838b0502166
 langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.ultimate_recipes
     - field.field.node.recipes.body
     - field.field.node.recipes.field_calories
     - field.field.node.recipes.field_ingredients
@@ -11,12 +12,17 @@ dependencies:
     - field.field.node.recipes.field_type_of_diet
     - node.type.recipes
   module:
+    - layout_builder
     - manage_display
     - text
-id: node.recipes.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.recipes.ultimate_recipes
 targetEntityType: node
 bundle: recipes
-mode: default
+mode: ultimate_recipes
 content:
   addtoany:
     settings: {  }
