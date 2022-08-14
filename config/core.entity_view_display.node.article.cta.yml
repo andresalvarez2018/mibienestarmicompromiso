@@ -45,12 +45,24 @@ content:
     settings:
       image_link: ''
       image_style: cta
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
     region: content
 hidden:
   addtoany: true
   comment: true
+  created: true
   field_meta_tags: true
   field_subheading: true
   field_tags: true
@@ -59,3 +71,4 @@ hidden:
   field_yoast_seo: true
   langcode: true
   links: true
+  uid: true

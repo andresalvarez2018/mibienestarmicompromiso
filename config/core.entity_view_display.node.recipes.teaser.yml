@@ -32,11 +32,22 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
   addtoany: true
+  created: true
   field_calories: true
   field_ingredients: true
   field_photo_recipe: true
   field_rations: true
   field_type_of_diet: true
   langcode: true
+  uid: true

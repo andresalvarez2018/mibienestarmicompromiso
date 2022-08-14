@@ -1,24 +1,23 @@
-uuid: 5f6e68eb-58f7-4a1d-b90d-b0f49db1f82f
+uuid: 010e3bbf-69e5-4073-b783-b74ad332e26c
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:render_paragraphs:84872fd1-6c74-4a3f-b4e5-e2c18eb4bdd5'
+    - 'block_content:render_paragraphs:5b72d345-0799-42d9-844e-068809fbe17e'
   module:
     - block_content
     - node
-    - system
   theme:
     - showcase_lite
 id: carrusel
 theme: showcase_lite
 region: media_background_first
-weight: 0
+weight: -6
 provider: null
-plugin: 'block_content:84872fd1-6c74-4a3f-b4e5-e2c18eb4bdd5'
+plugin: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
 settings:
-  id: 'block_content:84872fd1-6c74-4a3f-b4e5-e2c18eb4bdd5'
-  label: 'Carrusel '
+  id: 'block_content:5b72d345-0799-42d9-844e-068809fbe17e'
+  label: Carrusel.
   label_display: '0'
   provider: block_content
   status: true
@@ -32,7 +31,3 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       page: page
-  request_path:
-    id: request_path
-    negate: true
-    pages: '<front>'

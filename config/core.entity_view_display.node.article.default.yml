@@ -114,5 +114,16 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
+  created: true
   langcode: true
+  uid: true

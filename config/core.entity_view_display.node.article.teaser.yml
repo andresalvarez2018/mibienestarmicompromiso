@@ -45,6 +45,8 @@ content:
     settings:
       image_link: content
       image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: -1
     region: content
@@ -59,9 +61,18 @@ content:
   links:
     weight: 100
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
 hidden:
   comment: true
-  field_image: true
+  created: true
   field_meta_tags: true
   field_subheading: true
   field_tags: true
@@ -69,3 +80,4 @@ hidden:
   field_video_url: true
   field_yoast_seo: true
   langcode: true
+  uid: true
