@@ -7,6 +7,7 @@ namespace Drupal\mbmc_antropometria\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\Node;
 
 class RlcForm extends FormBase
 {
@@ -139,7 +140,7 @@ class RlcForm extends FormBase
 
             $node = Node::create(['type' => 'antropometria']);
             $node->title = 'Antropometria de' . $name;
-            $node->uid = 1;
+            $node->uid = $user_id;
             $node->field_cintura = $datos['cintura'];
             $node->field_cadera = $datos['cadera'];
             $node->field_relacion_cintura_cadera = $datos['rlc'];

@@ -1,0 +1,19 @@
+uuid: 82b5110b-f699-4a23-aaa0-21a6d86815fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cadera_grasa
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa.field_cadera_grasa
+field_name: field_cadera_grasa
+entity_type: node
+bundle: porcentaje_grasa
+label: cadera
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

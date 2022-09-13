@@ -1,0 +1,45 @@
+uuid: f55106be-76ba-490b-a4e8-c97ee13657a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.porcentaje_grasa.field_cadera_grasa
+    - field.field.node.porcentaje_grasa.field_cintura_grasa
+    - field.field.node.porcentaje_grasa.field_cuello
+    - field.field.node.porcentaje_grasa.field_estado
+    - field.field.node.porcentaje_grasa.field_estatura
+    - field.field.node.porcentaje_grasa.field_porcentaje_
+    - node.type.porcentaje_grasa
+  module:
+    - manage_display
+id: node.porcentaje_grasa.teaser
+targetEntityType: node
+bundle: porcentaje_grasa
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  field_cadera_grasa: true
+  field_cintura_grasa: true
+  field_cuello: true
+  field_estado: true
+  field_estatura: true
+  field_porcentaje_: true
+  langcode: true
+  uid: true

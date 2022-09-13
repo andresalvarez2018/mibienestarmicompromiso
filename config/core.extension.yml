@@ -55,6 +55,7 @@ module:
   mbmc_banner_video: 0
   mbmc_card: 0
   mbmc_carrousel: 0
+  mbmc_porcentaje_grasa: 0
   media: 0
   media_entity_lottie: 0
   media_library: 0

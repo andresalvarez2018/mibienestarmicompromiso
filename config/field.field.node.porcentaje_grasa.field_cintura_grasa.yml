@@ -1,0 +1,19 @@
+uuid: 2371e1d6-935e-4a11-9229-13d6335b02e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cintura_grasa
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa.field_cintura_grasa
+field_name: field_cintura_grasa
+entity_type: node
+bundle: porcentaje_grasa
+label: cintura
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

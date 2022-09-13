@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains mbmc_porcentaje_grasa.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mbmc_porcentaje_grasa_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the mbmc_porcentaje_grasa module.
+        case 'help.page.mbmc_porcentaje_grasa':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('My Awesome Module') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mbmc_porcentaje_grasa_theme()
+{
+    return [
+        'mbmc_porcentaje_grasa' => [
+            'render element' => 'children',
+        ],
+    ];
+}

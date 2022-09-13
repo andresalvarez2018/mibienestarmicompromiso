@@ -1,0 +1,86 @@
+uuid: 9f809e67-3a1d-42ab-aef7-d421f02a7b3b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.porcentaje_grasa.field_cadera_grasa
+    - field.field.node.porcentaje_grasa.field_cintura_grasa
+    - field.field.node.porcentaje_grasa.field_cuello
+    - field.field.node.porcentaje_grasa.field_estado
+    - field.field.node.porcentaje_grasa.field_estatura
+    - field.field.node.porcentaje_grasa.field_porcentaje_
+    - node.type.porcentaje_grasa
+  module:
+    - manage_display
+id: node.porcentaje_grasa.default
+targetEntityType: node
+bundle: porcentaje_grasa
+mode: default
+content:
+  field_cadera_grasa:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_cintura_grasa:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_cuello:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_estado:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_estatura:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_porcentaje_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -50
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  langcode: true
+  uid: true

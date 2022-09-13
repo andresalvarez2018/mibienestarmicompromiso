@@ -1,0 +1,19 @@
+uuid: 4de84eac-66c4-46aa-94fd-9bc4dc098547
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_porcentaje_
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa.field_porcentaje_
+field_name: field_porcentaje_
+entity_type: node
+bundle: porcentaje_grasa
+label: 'porcentaje grasa'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

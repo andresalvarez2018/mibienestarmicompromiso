@@ -1,0 +1,19 @@
+uuid: 49eb7a84-ff95-4445-bed1-178a4f8ff9d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuello
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa.field_cuello
+field_name: field_cuello
+entity_type: node
+bundle: porcentaje_grasa
+label: cuello
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

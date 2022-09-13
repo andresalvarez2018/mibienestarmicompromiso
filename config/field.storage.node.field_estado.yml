@@ -1,0 +1,21 @@
+uuid: 16ebb39d-bf1e-4dc7-941b-f593bd07b08b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_estado
+field_name: field_estado
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

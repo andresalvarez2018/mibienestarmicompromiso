@@ -15,6 +15,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
     - views.view.imc
+    - views.view.porcentaje_de_grasa
     - views.view.rlc
   module:
     - country_state_city
@@ -174,6 +175,38 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          7829d4d8-6b9e-4082-a0db-ad52b45221ab:
+            uuid: 7829d4d8-6b9e-4082-a0db-ad52b45221ab
+            region: second
+            configuration:
+              id: 'views_block:porcentaje_de_grasa-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          522f09db-8919-47a0-a7df-53b70e7ee53d:
+            uuid: 522f09db-8919-47a0-a7df-53b70e7ee53d
+            region: content
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
@@ -248,9 +281,12 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   field_celular: true
   langcode: true
+  name: true

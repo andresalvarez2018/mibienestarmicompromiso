@@ -1,0 +1,11 @@
+uuid: 0c6a36b9-dca6-41b5-b41b-b10da5b5b168
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa
+target_entity_type_id: node
+target_bundle: porcentaje_grasa
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,7 @@
+mbmc_porcentaje_grasa.porcentaje_grasa_form:
+  path: '/form/porcentaje_grasa'
+  defaults:
+    _form: '\Drupal\mbmc_porcentaje_grasa\Form\PorcentajeGrasaForm'
+    _title: 'Porcentaje de Grasa'
+  requirements:
+    _access: 'TRUE'

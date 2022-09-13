@@ -1,0 +1,19 @@
+uuid: b27a6abc-3c04-4ea5-8d0f-b1ed8dc09e51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estado
+    - node.type.porcentaje_grasa
+id: node.porcentaje_grasa.field_estado
+field_name: field_estado
+entity_type: node
+bundle: porcentaje_grasa
+label: Estado
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
